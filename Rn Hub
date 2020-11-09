@@ -1,0 +1,947 @@
+---Arsenal---
+-- this is basic but you can add the rest from this
+local gameplaceid = 142823291
+
+if game.PlaceId == gameplaceid then
+    
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.Position = UDim2.new(0.310156256, 0, 0.366666675, 0)
+TextLabel.Size = UDim2.new(0, 306, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "DETECTED: Murder Mystery, LOADING THE HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+-- Scripts:
+
+local function DBXLL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local frame = script.Parent
+	frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	frame.Position = UDim2.new(99, 70, 99, 70)
+	frame.BorderSizePixel = 0
+	frame.Size = UDim2.new(100, 100, 100, 100)
+	frame.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+	frame.BackgroundTransparency = (0)
+	
+	-- Set up tweens
+	local tweenInfo1 = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+	local tween1 = TweenService:Create(frame, tweenInfo1, {Position=UDim2.new(0.5, 0, 0.5, 0)})
+	local tweenInfo2 = TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut)
+	local tween2 = TweenService:Create(frame, tweenInfo2, {Rotation=360})
+	
+	tween1.Completed:Connect(function()
+		tween2:Play()
+	end)
+	
+	wait(2)
+	
+	tween1:Play()
+	
+	wait(5)
+	frame.Visible = false
+end
+coroutine.wrap(DBXLL_fake_script)()
+
+wait(7)
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/g3ReEMd4", true))()
+   
+end
+
+---Arsenal---
+-- this is basic but you can add the rest from this
+local gameplaceid = 286090429
+
+if game.PlaceId == gameplaceid then
+    
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.Position = UDim2.new(0.310156256, 0, 0.366666675, 0)
+TextLabel.Size = UDim2.new(0, 306, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "DETECTED: Arsenal, LOADING THE HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+-- Scripts:
+
+local function DBXLL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local frame = script.Parent
+	frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	frame.Position = UDim2.new(99, 70, 99, 70)
+	frame.BorderSizePixel = 0
+	frame.Size = UDim2.new(100, 100, 100, 100)
+	frame.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+	frame.BackgroundTransparency = (0)
+	
+	-- Set up tweens
+	local tweenInfo1 = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+	local tween1 = TweenService:Create(frame, tweenInfo1, {Position=UDim2.new(0.5, 0, 0.5, 0)})
+	local tweenInfo2 = TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut)
+	local tween2 = TweenService:Create(frame, tweenInfo2, {Rotation=360})
+	
+	tween1.Completed:Connect(function()
+		tween2:Play()
+	end)
+	
+	wait(2)
+	
+	tween1:Play()
+	
+	wait(5)
+	frame.Visible = false
+end
+coroutine.wrap(DBXLL_fake_script)()
+
+wait(7)
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/X4uLPnVQ", true))()
+   
+end
+
+---Counter blox---
+-- this is basic but you can add the rest from this
+local gameplaceid = 301549746
+
+if game.PlaceId == gameplaceid then
+    
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.Position = UDim2.new(0.310156256, 0, 0.366666675, 0)
+TextLabel.Size = UDim2.new(0, 306, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "DETECTED: Counter blox, LOADING THE HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+-- Scripts:
+
+local function DBXLL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local frame = script.Parent
+	frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	frame.Position = UDim2.new(99, 70, 99, 70)
+	frame.BorderSizePixel = 0
+	frame.Size = UDim2.new(100, 100, 100, 100)
+	frame.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+	frame.BackgroundTransparency = (0)
+	
+	-- Set up tweens
+	local tweenInfo1 = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+	local tween1 = TweenService:Create(frame, tweenInfo1, {Position=UDim2.new(0.5, 0, 0.5, 0)})
+	local tweenInfo2 = TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut)
+	local tween2 = TweenService:Create(frame, tweenInfo2, {Rotation=360})
+	
+	tween1.Completed:Connect(function()
+		tween2:Play()
+	end)
+	
+	wait(2)
+	
+	tween1:Play()
+	
+	wait(5)
+	frame.Visible = false
+end
+coroutine.wrap(DBXLL_fake_script)()
+
+wait(7)
+
+    loadstring(game:HttpGet(('https://pastebin.com/raw/MUwRvcRB')))()
+   
+end
+
+---Blast off---
+
+-- this is basic but you can add the rest from this
+local gameplaceid = 5256165620
+
+if game.PlaceId == gameplaceid then
+    
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.Position = UDim2.new(0.310156256, 0, 0.366666675, 0)
+TextLabel.Size = UDim2.new(0, 306, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "DETECTED: Blast off, LOADING THE HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+-- Scripts:
+
+local function DBXLL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local frame = script.Parent
+	frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	frame.Position = UDim2.new(99, 70, 99, 70)
+	frame.BorderSizePixel = 0
+	frame.Size = UDim2.new(100, 100, 100, 100)
+	frame.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+	frame.BackgroundTransparency = (0)
+	
+	-- Set up tweens
+	local tweenInfo1 = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+	local tween1 = TweenService:Create(frame, tweenInfo1, {Position=UDim2.new(0.5, 0, 0.5, 0)})
+	local tweenInfo2 = TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut)
+	local tween2 = TweenService:Create(frame, tweenInfo2, {Rotation=360})
+	
+	tween1.Completed:Connect(function()
+		tween2:Play()
+	end)
+	
+	wait(2)
+	
+	tween1:Play()
+	
+	wait(5)
+	frame.Visible = false
+end
+coroutine.wrap(DBXLL_fake_script)()
+
+wait(7)
+
+    loadstring(game:HttpGet(('https://pastebin.com/raw/vzxPhD1P')))()
+   
+end
+
+---Bloxburg---
+
+-- this is basic but you can add the rest from this
+local gameplaceid = 185655149
+
+if game.PlaceId == gameplaceid then
+    
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.Position = UDim2.new(0.310156256, 0, 0.366666675, 0)
+TextLabel.Size = UDim2.new(0, 306, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "DETECTED: Bloxburg, LOADING THE HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+-- Scripts:
+
+local function DBXLL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local frame = script.Parent
+	frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	frame.Position = UDim2.new(99, 70, 99, 70)
+	frame.BorderSizePixel = 0
+	frame.Size = UDim2.new(100, 100, 100, 100)
+	frame.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+	frame.BackgroundTransparency = (0)
+	
+	-- Set up tweens
+	local tweenInfo1 = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+	local tween1 = TweenService:Create(frame, tweenInfo1, {Position=UDim2.new(0.5, 0, 0.5, 0)})
+	local tweenInfo2 = TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut)
+	local tween2 = TweenService:Create(frame, tweenInfo2, {Rotation=360})
+	
+	tween1.Completed:Connect(function()
+		tween2:Play()
+	end)
+	
+	wait(2)
+	
+	tween1:Play()
+	
+	wait(5)
+	frame.Visible = false
+end
+coroutine.wrap(DBXLL_fake_script)()
+
+wait(7)
+
+    loadstring(game:HttpGet(('https://pastebin.com/raw/ER0Xkdra')))()
+   
+end
+
+---prisons life---
+
+-- this is basic but you can add the rest from this
+local gameplaceid = 155615604
+
+if game.PlaceId == gameplaceid then
+    
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.Position = UDim2.new(0.310156256, 0, 0.366666675, 0)
+TextLabel.Size = UDim2.new(0, 306, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "DETECTED: Prisons life, LOADING THE HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+-- Scripts:
+
+local function DBXLL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local frame = script.Parent
+	frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	frame.Position = UDim2.new(99, 70, 99, 70)
+	frame.BorderSizePixel = 0
+	frame.Size = UDim2.new(100, 100, 100, 100)
+	frame.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+	frame.BackgroundTransparency = (0)
+	
+	-- Set up tweens
+	local tweenInfo1 = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+	local tween1 = TweenService:Create(frame, tweenInfo1, {Position=UDim2.new(0.5, 0, 0.5, 0)})
+	local tweenInfo2 = TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut)
+	local tween2 = TweenService:Create(frame, tweenInfo2, {Rotation=360})
+	
+	tween1.Completed:Connect(function()
+		tween2:Play()
+	end)
+	
+	wait(2)
+	
+	tween1:Play()
+	
+	wait(5)
+	frame.Visible = false
+end
+coroutine.wrap(DBXLL_fake_script)()
+
+wait(7)
+
+    loadstring(game:HttpGet(('https://pastebin.com/raw/f3u9TpS8')))()
+   
+end
+
+---Phantom force---
+
+-- this is basic but you can add the rest from this
+local gameplaceid = 292439477
+
+if game.PlaceId == gameplaceid then
+    
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.Position = UDim2.new(0.310156256, 0, 0.366666675, 0)
+TextLabel.Size = UDim2.new(0, 306, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "DETECTED: Phantom force, LOADING THE HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+-- Scripts:
+
+local function DBXLL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local frame = script.Parent
+	frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	frame.Position = UDim2.new(99, 70, 99, 70)
+	frame.BorderSizePixel = 0
+	frame.Size = UDim2.new(100, 100, 100, 100)
+	frame.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+	frame.BackgroundTransparency = (0)
+	
+	-- Set up tweens
+	local tweenInfo1 = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+	local tween1 = TweenService:Create(frame, tweenInfo1, {Position=UDim2.new(0.5, 0, 0.5, 0)})
+	local tweenInfo2 = TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut)
+	local tween2 = TweenService:Create(frame, tweenInfo2, {Rotation=360})
+	
+	tween1.Completed:Connect(function()
+		tween2:Play()
+	end)
+	
+	wait(2)
+	
+	tween1:Play()
+	
+	wait(5)
+	frame.Visible = false
+end
+coroutine.wrap(DBXLL_fake_script)()
+
+wait(7)
+
+    loadstring(game:HttpGet(('https://pastebin.com/raw/5NkQ7JuQ')))()
+   
+end
+
+---jailbreak---
+
+-- this is basic but you can add the rest from this
+local gameplaceid = 606849621
+
+if game.PlaceId == gameplaceid then
+    
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.Position = UDim2.new(0.310156256, 0, 0.366666675, 0)
+TextLabel.Size = UDim2.new(0, 306, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "DETECTED: Jailbreak, LOADING THE HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+-- Scripts:
+
+local function DBXLL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local frame = script.Parent
+	frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	frame.Position = UDim2.new(99, 70, 99, 70)
+	frame.BorderSizePixel = 0
+	frame.Size = UDim2.new(100, 100, 100, 100)
+	frame.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+	frame.BackgroundTransparency = (0)
+	
+	-- Set up tweens
+	local tweenInfo1 = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+	local tween1 = TweenService:Create(frame, tweenInfo1, {Position=UDim2.new(0.5, 0, 0.5, 0)})
+	local tweenInfo2 = TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut)
+	local tween2 = TweenService:Create(frame, tweenInfo2, {Rotation=360})
+	
+	tween1.Completed:Connect(function()
+		tween2:Play()
+	end)
+	
+	wait(2)
+	
+	tween1:Play()
+	
+	wait(5)
+	frame.Visible = false
+end
+coroutine.wrap(DBXLL_fake_script)()
+
+wait(7)
+
+    loadstring(game:HttpGet(('https://pastebin.com/raw/4NwnvAWx')))()
+   
+end
+
+---Legend of speed---
+
+-- this is basic but you can add the rest from this
+local gameplaceid = 3101667897
+
+if game.PlaceId == gameplaceid then
+    
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.Position = UDim2.new(0.310156256, 0, 0.366666675, 0)
+TextLabel.Size = UDim2.new(0, 306, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "DETECTED: Legend of speed, LOADING THE HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+-- Scripts:
+
+local function DBXLL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local frame = script.Parent
+	frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	frame.Position = UDim2.new(99, 70, 99, 70)
+	frame.BorderSizePixel = 0
+	frame.Size = UDim2.new(100, 100, 100, 100)
+	frame.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+	frame.BackgroundTransparency = (0)
+	
+	-- Set up tweens
+	local tweenInfo1 = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+	local tween1 = TweenService:Create(frame, tweenInfo1, {Position=UDim2.new(0.5, 0, 0.5, 0)})
+	local tweenInfo2 = TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut)
+	local tween2 = TweenService:Create(frame, tweenInfo2, {Rotation=360})
+	
+	tween1.Completed:Connect(function()
+		tween2:Play()
+	end)
+	
+	wait(2)
+	
+	tween1:Play()
+	
+	wait(5)
+	frame.Visible = false
+end
+coroutine.wrap(DBXLL_fake_script)()
+
+wait(7)
+
+    loadstring(game:HttpGet(('https://pastebin.com/raw/FLjrWXiu')))()
+   
+end
+
+---naval warface---
+
+-- this is basic but you can add the rest from this
+local gameplaceid = 2210085102
+
+if game.PlaceId == gameplaceid then
+    
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.Position = UDim2.new(0.310156256, 0, 0.366666675, 0)
+TextLabel.Size = UDim2.new(0, 306, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "DETECTED: Naval Warface, LOADING THE HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+-- Scripts:
+
+local function DBXLL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local frame = script.Parent
+	frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	frame.Position = UDim2.new(99, 70, 99, 70)
+	frame.BorderSizePixel = 0
+	frame.Size = UDim2.new(100, 100, 100, 100)
+	frame.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+	frame.BackgroundTransparency = (0)
+	
+	-- Set up tweens
+	local tweenInfo1 = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+	local tween1 = TweenService:Create(frame, tweenInfo1, {Position=UDim2.new(0.5, 0, 0.5, 0)})
+	local tweenInfo2 = TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut)
+	local tween2 = TweenService:Create(frame, tweenInfo2, {Rotation=360})
+	
+	tween1.Completed:Connect(function()
+		tween2:Play()
+	end)
+	
+	wait(2)
+	
+	tween1:Play()
+	
+	wait(5)
+	frame.Visible = false
+end
+coroutine.wrap(DBXLL_fake_script)()
+
+wait(7)
+
+    loadstring(game:HttpGet(('https://pastebin.com/raw/NzsDnHe3')))()
+   
+end
+
+---Quarantine Z---
+
+-- this is basic but you can add the rest from this
+local gameplaceid = 4923599624
+
+if game.PlaceId == gameplaceid then
+    
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.Position = UDim2.new(0.310156256, 0, 0.366666675, 0)
+TextLabel.Size = UDim2.new(0, 306, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "DETECTED: Quarantine Z, LOADING THE HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+-- Scripts:
+
+local function DBXLL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local frame = script.Parent
+	frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	frame.Position = UDim2.new(99, 70, 99, 70)
+	frame.BorderSizePixel = 0
+	frame.Size = UDim2.new(100, 100, 100, 100)
+	frame.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+	frame.BackgroundTransparency = (0)
+	
+	-- Set up tweens
+	local tweenInfo1 = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+	local tween1 = TweenService:Create(frame, tweenInfo1, {Position=UDim2.new(0.5, 0, 0.5, 0)})
+	local tweenInfo2 = TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut)
+	local tween2 = TweenService:Create(frame, tweenInfo2, {Rotation=360})
+	
+	tween1.Completed:Connect(function()
+		tween2:Play()
+	end)
+	
+	wait(2)
+	
+	tween1:Play()
+	
+	wait(5)
+	frame.Visible = false
+end
+coroutine.wrap(DBXLL_fake_script)()
+
+wait(7)
+
+    loadstring(game:HttpGet(('https://pastebin.com/raw/ZEGPcBmj')))()
+   
+end
+
+---Big paintball---
+
+-- this is basic but you can add the rest from this
+local gameplaceid = 3527629287
+
+if game.PlaceId == gameplaceid then
+    
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.Position = UDim2.new(0.310156256, 0, 0.366666675, 0)
+TextLabel.Size = UDim2.new(0, 306, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "DETECTED: Big paintball, LOADING THE HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+-- Scripts:
+
+local function DBXLL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local frame = script.Parent
+	frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	frame.Position = UDim2.new(99, 70, 99, 70)
+	frame.BorderSizePixel = 0
+	frame.Size = UDim2.new(100, 100, 100, 100)
+	frame.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+	frame.BackgroundTransparency = (0)
+	
+	-- Set up tweens
+	local tweenInfo1 = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+	local tween1 = TweenService:Create(frame, tweenInfo1, {Position=UDim2.new(0.5, 0, 0.5, 0)})
+	local tweenInfo2 = TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut)
+	local tween2 = TweenService:Create(frame, tweenInfo2, {Rotation=360})
+	
+	tween1.Completed:Connect(function()
+		tween2:Play()
+	end)
+	
+	wait(2)
+	
+	tween1:Play()
+	
+	wait(5)
+	frame.Visible = false
+end
+coroutine.wrap(DBXLL_fake_script)()
+
+wait(7)
+
+    loadstring(game:HttpGet(('https://pastebin.com/raw/NPUrJyRm')))()
+   
+end
+
+---Rocitizens---
+
+-- this is basic but you can add the rest from this
+local gameplaceid = 137877687
+
+if game.PlaceId == gameplaceid then
+    
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.Position = UDim2.new(0.310156256, 0, 0.366666675, 0)
+TextLabel.Size = UDim2.new(0, 306, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "DETECTED: Rocitizens, LOADING THE HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+-- Scripts:
+
+local function DBXLL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local frame = script.Parent
+	frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	frame.Position = UDim2.new(99, 70, 99, 70)
+	frame.BorderSizePixel = 0
+	frame.Size = UDim2.new(100, 100, 100, 100)
+	frame.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+	frame.BackgroundTransparency = (0)
+	
+	-- Set up tweens
+	local tweenInfo1 = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+	local tween1 = TweenService:Create(frame, tweenInfo1, {Position=UDim2.new(0.5, 0, 0.5, 0)})
+	local tweenInfo2 = TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut)
+	local tween2 = TweenService:Create(frame, tweenInfo2, {Rotation=360})
+	
+	tween1.Completed:Connect(function()
+		tween2:Play()
+	end)
+	
+	wait(2)
+	
+	tween1:Play()
+	
+	wait(5)
+	frame.Visible = false
+end
+coroutine.wrap(DBXLL_fake_script)()
+
+wait(7)
+
+    loadstring(game:HttpGet(('https://pastebin.com/raw/yd4vcTu8')))()
+   
+end
+
+---Destruction sim---
+-- this is basic but you can add the rest from this
+local gameplaceid = 2248408710
+
+if game.PlaceId == gameplaceid then
+    
+    -- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.Position = UDim2.new(0.310156256, 0, 0.366666675, 0)
+TextLabel.Size = UDim2.new(0, 306, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "DETECTED: Destruction Simulator, LOADING THE HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 40.000
+
+-- Scripts:
+
+local function DBXLL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local TweenService = game:GetService("TweenService")
+	
+	local frame = script.Parent
+	frame.AnchorPoint = Vector2.new(0.5, 0.5)
+	frame.Position = UDim2.new(99, 70, 99, 70)
+	frame.BorderSizePixel = 0
+	frame.Size = UDim2.new(100, 100, 100, 100)
+	frame.BackgroundColor3 = Color3.new(1, 0, 0.0156863)
+	frame.BackgroundTransparency = (0)
+	
+	-- Set up tweens
+	local tweenInfo1 = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)
+	local tween1 = TweenService:Create(frame, tweenInfo1, {Position=UDim2.new(0.5, 0, 0.5, 0)})
+	local tweenInfo2 = TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.InOut)
+	local tween2 = TweenService:Create(frame, tweenInfo2, {Rotation=360})
+	
+	tween1.Completed:Connect(function()
+		tween2:Play()
+	end)
+	
+	wait(2)
+	
+	tween1:Play()
+	
+	wait(5)
+	frame.Visible = false
+end
+coroutine.wrap(DBXLL_fake_script)()
+
+wait(7)
+
+    loadstring(game:HttpGet("https://pastebin.com/raw/mLcicgmJ", true))()
+   
+end
