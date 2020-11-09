@@ -1,0 +1,522 @@
+--Info: This is a unidentified UI Library, I don't know where this originated from or if it's good. I haven't attempted using it or even read through the script to see if its malicious. If you find a way to use this DM me on discord for credit to assistance
+--If you're the maker of this DM my discord for credit or if you want this to be removed.
+
+local library = {}
+
+function library:CreateWindow(icon)
+	
+	local PROBABLYANERROR = Instance.new("ScreenGui")
+	local left = Instance.new("Frame")
+	local image = Instance.new("ImageLabel")
+	local right = Instance.new("Frame")
+	local buttonholder = Instance.new("Frame")
+	local UIListLayout = Instance.new("UIListLayout")
+	
+	PROBABLYANERROR.Name = game:service"HttpService":GenerateGUID(false)
+	PROBABLYANERROR.Parent = game.CoreGui
+	PROBABLYANERROR.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	left.Name = "left"
+	left.Parent = PROBABLYANERROR
+	left.BackgroundColor3 = Color3.fromRGB(43, 46, 63)
+	left.BackgroundTransparency = 0.150
+	left.BorderColor3 = Color3.fromRGB(35, 38, 52)
+	left.Position = UDim2.new(0.187032416, 0, 0.108108111, 0)
+	left.Size = UDim2.new(0, 150, 0, 500)
+
+	image.Name = "image"
+	image.Parent = left
+	image.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	image.BackgroundTransparency = 1.000
+	image.Position = UDim2.new(0.5, -55, 0, 15)
+	image.Size = UDim2.new(0, 110, 0, 110)
+	image.Image = "http://www.roblox.com/asset/?id="..icon
+	image.ScaleType = Enum.ScaleType.Fit
+
+	right.Name = "right"
+	right.Parent = left
+	right.BackgroundColor3 = Color3.fromRGB(50, 53, 68)
+	right.BackgroundTransparency = 0.080
+	right.BorderColor3 = Color3.fromRGB(43, 46, 59)
+	right.Position = UDim2.new(1, 0, 0, 0)
+	right.Size = UDim2.new(0, 400, 0, 500)
+
+	buttonholder.Name = "buttonholder"
+	buttonholder.Parent = left
+	buttonholder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	buttonholder.BackgroundTransparency = 1.000
+	buttonholder.Position = UDim2.new(0, 0, 0.238000005, 0)
+	buttonholder.Size = UDim2.new(0, 150, 0, 381)
+	
+	UIListLayout.Parent = buttonholder
+	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	
+	function dragify(Frame)
+		
+		dragToggle = nil
+		dragSpeed = .15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:service"TweenService":Create(Frame, TweenInfo.new(dragSpeed), {Position = Position}):Play()
+		end
+
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if (input.UserInputState == Enum.UserInputState.End) then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+
+		Frame.InputChanged:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+				dragInput = input
+			end
+		end)
+
+		game:service"UserInputService".InputChanged:Connect(function(input)
+			if (input == dragInput and dragToggle) then
+				updateInput(input)
+			end
+		end)
+		
+	end
+	
+	dragify(left)
+	
+	local lib3 = {}
+	
+	function lib3:CreateTab(text, visible)
+		
+		local button = Instance.new("Frame")
+		local buttonbutton = Instance.new("TextButton")
+		local circle = Instance.new("ImageLabel")
+		local tabname = Instance.new("Frame")
+		local rightframe = Instance.new("ScrollingFrame")
+		local UIListLayout = Instance.new("UIListLayout")
+		local box = Instance.new("Frame")
+		local leftframe = Instance.new("ScrollingFrame")
+		local box_2 = Instance.new("Frame")
+		local boxlabel = Instance.new("TextLabel")
+		local container = Instance.new("Frame")
+		local UIListLayout_2 = Instance.new("UIListLayout")
+		local UIListLayout_3 = Instance.new("UIListLayout")
+
+		tabname.Name = "tabname"
+		tabname.Parent = right
+		tabname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		tabname.BackgroundTransparency = 1.000
+		tabname.BorderSizePixel = 0
+		tabname.Position = UDim2.new(0.5, -185, 0.5, -235)
+		tabname.Size = UDim2.new(0, 370, 0, 470)
+
+		rightframe.Name = "rightframe"
+		rightframe.Parent = tabname
+		rightframe.BackgroundColor3 = Color3.fromRGB(43, 46, 63)
+		rightframe.BackgroundTransparency = 1.000
+		rightframe.BorderColor3 = Color3.fromRGB(22, 22, 22)
+		rightframe.BorderSizePixel = 0
+		rightframe.Position = UDim2.new(0.5, 5, 0, 0)
+		rightframe.Size = UDim2.new(0, 180, 0, 470)
+		rightframe.ScrollBarThickness = 0
+
+		UIListLayout.Parent = rightframe
+		UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+		UIListLayout.Padding = UDim.new(0, 5)
+
+		leftframe.Name = "leftframe"
+		leftframe.Parent = tabname
+		leftframe.BackgroundColor3 = Color3.fromRGB(43, 46, 63)
+		leftframe.BackgroundTransparency = 1.000
+		leftframe.BorderColor3 = Color3.fromRGB(22, 22, 22)
+		leftframe.BorderSizePixel = 0
+		leftframe.Size = UDim2.new(0, 180, 0, 470)
+		leftframe.ScrollBarThickness = 0
+
+		UIListLayout_3.Parent = leftframe
+		UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+		UIListLayout_3.Padding = UDim.new(0, 5)
+		
+		local visibled = visible
+
+		button.Name = "button"
+		button.Parent = buttonholder
+		button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		button.BackgroundTransparency = 1.000
+		button.Size = UDim2.new(1, 0, 0, 28)
+
+		buttonbutton.Name = "buttonbutton"
+		buttonbutton.Parent = button
+		buttonbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		buttonbutton.BackgroundTransparency = 1.000
+		buttonbutton.Position = UDim2.new(0.206666663, 0, 0, 0)
+		buttonbutton.Size = UDim2.new(0, 119, 0, 28)
+
+		buttonbutton.Font = Enum.Font.GothamSemibold
+		buttonbutton.Text = text
+		buttonbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+		buttonbutton.TextSize = 16.000
+		buttonbutton.TextXAlignment = Enum.TextXAlignment.Left
+
+		circle.Name = "circle"
+		circle.Parent = button
+		circle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		circle.BackgroundTransparency = 1.000
+		circle.Position = UDim2.new(0.720000029, 0, 0.5, -5)
+		circle.Size = UDim2.new(0, 10, 0, 10)
+		circle.Image = "http://www.roblox.com/asset/?id=232918622"
+		circle.ImageColor3 = Color3.fromRGB(142, 137, 194)
+		
+		if visible then
+			buttonbutton.Font = Enum.Font.GothamSemibold
+			buttonbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+			circle.ImageColor3 = Color3.fromRGB(142, 137, 194)
+			tabname.Visible = true
+		else
+			buttonbutton.Font = Enum.Font.Gotham
+			buttonbutton.TextColor3 = Color3.fromRGB(200,200,200)
+			circle.ImageColor3 = Color3.fromRGB(63, 66, 83)
+			tabname.Visible = false
+		end
+		
+		buttonbutton.MouseButton1Click:Connect(function()
+			for i,v in pairs(buttonholder:GetChildren()) do
+				if v:IsA("Frame") then
+					local ti5 = TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+					local tIn5 = {TextColor3 = Color3.fromRGB(200,200,200)}
+					local createIn5 = game:service"TweenService":Create(v.buttonbutton, ti5, tIn5)
+					local tIn25 = {ImageColor3 = Color3.fromRGB(63, 66, 83)}
+					local createIn25 = game:service"TweenService":Create(v.circle, ti5, tIn25)
+					createIn5:Play()
+					createIn25:Play()
+					v.buttonbutton.Font = Enum.Font.Gotham
+					local ti = TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+					local tIn = {TextColor3 = Color3.fromRGB(255, 255, 255)}
+					local createIn = game:service"TweenService":Create(buttonbutton, ti, tIn)
+					local tIn2 = {ImageColor3 = Color3.fromRGB(142, 137, 194)}
+					local createIn2 = game:service"TweenService":Create(circle, ti, tIn2)
+					visibled = false
+					buttonbutton.Font = Enum.Font.GothamSemibold
+					createIn:Play()
+					createIn2:Play()
+					for _,z in pairs(right:GetChildren()) do
+						z.Visible = false
+					end
+					tabname.Visible = true
+				end
+			end
+		end)
+		
+		local lib4 = {}
+		
+		function lib4:CreateBox(title, side, size)
+						
+			local box = Instance.new("Frame")
+			local boxlabel = Instance.new("TextLabel")
+			local container = Instance.new("Frame")
+			local UIListLayout = Instance.new("UIListLayout")
+			
+			box.Name = "box"
+			box.Parent = tabname[side.."frame"]
+			box.BackgroundColor3 = Color3.fromRGB(43, 46, 63)
+			box.BackgroundTransparency = 0.200
+			box.BorderColor3 = Color3.fromRGB(0, 0, 0)
+			box.BorderSizePixel = 0
+			box.Position = UDim2.new(0, 0, -0.0425531901, 0)
+			box.Size = UDim2.new(0, 180, 0, size)
+
+			boxlabel.Name = "boxlabel"
+			boxlabel.Parent = box
+			boxlabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			boxlabel.BackgroundTransparency = 1.000
+			boxlabel.Position = UDim2.new(0.055555556, 0, 0.0245901644, 0)
+			boxlabel.Size = UDim2.new(0, 163, 0, 20)
+			boxlabel.Font = Enum.Font.GothamSemibold
+			boxlabel.Text = title
+			boxlabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+			boxlabel.TextSize = 14.000
+			boxlabel.TextStrokeTransparency = 0.000
+			boxlabel.TextXAlignment = Enum.TextXAlignment.Left
+
+			container.Name = "container"
+			container.Parent = box
+			container.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			container.BackgroundTransparency = 1.000
+			container.Position = UDim2.new(0.056, 0, 0, 25)
+			container.Size = UDim2.new(0, 163, 0, size - 38)
+
+			UIListLayout.Parent = container
+			UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+			UIListLayout.Padding = UDim.new(0, 2)
+			
+			local lib5 = {}
+			
+			function lib5:CreateToggle(title, callback)
+				
+				local buttonmodule = Instance.new("TextButton")
+				local label2 = Instance.new("TextLabel")
+				local imagebutton = Instance.new("ImageLabel")
+				local toggled = false
+
+				buttonmodule.Name = "buttonmodule"
+				buttonmodule.Parent = container
+				buttonmodule.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				buttonmodule.BackgroundTransparency = 1.000
+				buttonmodule.Size = UDim2.new(0, 163, 0, 16)
+				buttonmodule.Font = Enum.Font.SourceSans
+				buttonmodule.Text = ""
+				buttonmodule.TextColor3 = Color3.fromRGB(0, 0, 0)
+				buttonmodule.TextSize = 14.000
+
+				label2.Name = "label2"
+				label2.Parent = buttonmodule
+				label2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+				label2.BackgroundTransparency = 1.000
+				label2.Position = UDim2.new(0.104134962, 0, 0.5, -5)
+				label2.Size = UDim2.new(0, 146, 0, 10)
+				label2.Font = Enum.Font.Gotham
+				label2.Text = title
+				label2.TextColor3 = Color3.fromRGB(255, 255, 255)
+				label2.TextSize = 13.000
+				label2.TextXAlignment = Enum.TextXAlignment.Left
+
+				imagebutton.Name = "imagebutton"
+				imagebutton.Parent = buttonmodule
+				imagebutton.BackgroundColor3 = Color3.fromRGB(63, 66, 83)
+				imagebutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+				imagebutton.Position = UDim2.new(0, 0, 0.5, -5)
+				imagebutton.Size = UDim2.new(0, 10, 0, 10)
+				imagebutton.Image = "http://www.roblox.com/asset/?id=5935735399"
+				imagebutton.ImageTransparency = 1.000
+				
+				buttonmodule.MouseButton1Click:Connect(function()
+					local ti = TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+					local tIn = {ImageTransparency = 0}
+					local createIn = game:service"TweenService":Create(imagebutton, ti, tIn)
+					local tIn2 = {ImageTransparency = 1}
+					local createIn2 = game:service"TweenService":Create(imagebutton, ti, tIn2)
+					toggled = not toggled
+					if toggled then
+						createIn:Play()
+					elseif not toggled then
+						createIn2:Play()
+					end
+					pcall(callback, toggled)
+				end)
+				
+				local lib6 = {}
+				
+				function lib6:SetValue(value)
+					toggled = value
+					local ti = TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+					local tIn = {ImageTransparency = 0}
+					local createIn = game:service"TweenService":Create(imagebutton, ti, tIn)
+					local tIn2 = {ImageTransparency = 1}
+					local createIn2 = game:service"TweenService":Create(imagebutton, ti, tIn2)
+					if toggled then
+						createIn:Play()
+					elseif not toggled then
+						createIn2:Play()
+					end
+				end
+				
+				function lib5:CreateSlider(text, def, min, max, callback)
+					
+					local slidermodule = Instance.new("Frame")
+					local label2 = Instance.new("TextLabel")
+					local backslider = Instance.new("ImageLabel")
+					local fillslider = Instance.new("ImageLabel")
+					local label = Instance.new("TextLabel")
+
+					slidermodule.Name = "slidermodule"
+					slidermodule.Parent = container
+					slidermodule.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					slidermodule.BackgroundTransparency = 1.000
+					slidermodule.BorderSizePixel = 0
+					slidermodule.Position = UDim2.new(0, 0, 0.0970873758, 0)
+					slidermodule.Size = UDim2.new(0, 163, 0, 31)
+
+					label2.Name = "label2"
+					label2.Parent = slidermodule
+					label2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					label2.BackgroundTransparency = 1.000
+					label2.Position = UDim2.new(0.104000002, 0, 0.5, -13)
+					label2.Size = UDim2.new(0, 146, 0, 10)
+					label2.Font = Enum.Font.Gotham
+					label2.Text = text
+					label2.TextColor3 = Color3.fromRGB(255, 255, 255)
+					label2.TextSize = 13.000
+					label2.TextXAlignment = Enum.TextXAlignment.Left
+
+					backslider.Name = "backslider"
+					backslider.Parent = slidermodule
+					backslider.BackgroundColor3 = Color3.fromRGB(63, 66, 83)
+					backslider.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					backslider.Position = UDim2.new(0.104000002, 0, 0.560000002, 0)
+					backslider.Size = UDim2.new(0, 145, 0, 12)
+					backslider.ImageColor3 = Color3.fromRGB(63, 66, 83)
+
+					fillslider.Name = "fillslider"
+					fillslider.Parent = backslider
+					fillslider.BackgroundColor3 = Color3.fromRGB(63, 66, 83)
+					fillslider.BorderColor3 = Color3.fromRGB(0, 0, 0)
+					fillslider.BorderSizePixel = 0
+					fillslider.Size = UDim2.new(0, 0, 0, 10)
+					fillslider.Image = "http://www.roblox.com/asset/?id=5935735399"
+
+					label.Name = "label"
+					label.Parent = backslider
+					label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+					label.BackgroundTransparency = 1.000
+					label.Position = UDim2.new(0.5, -4, 0, 0)
+					label.Size = UDim2.new(0, 8, 0, 12)
+					label.Font = Enum.Font.Gotham
+					label.Text = "1"
+					label.TextColor3 = Color3.fromRGB(255, 255, 255)
+					label.TextSize = 12.000
+					
+					local sliding
+					local inContact
+
+					local function round(num, bracket)
+						bracket = bracket or 1
+						local a = math.floor(num/bracket + (math.sign(num) * 0.5)) * bracket
+						if a < 0 then
+							a = a + bracket
+						end
+						return a
+					end
+					
+					local lib9 = {}
+
+					function lib9:SetValue(value)
+						value = round(value, 1)
+						value = math.clamp(value, min, max)
+						if min >= 0 then
+							fillslider:TweenSize(UDim2.new((value - min) / (max - min), 0, 1, 0), "Out", "Quad", 0.1, true)
+						else
+							fillslider:TweenPosition(UDim2.new((0 - min) / (max - min), 0, 0, 0), "Out", "Quad", 0.1, true)
+							fillslider:TweenSize(UDim2.new(value / (max - min), 0, 1, 0), "Out", "Quad", 0.1, true)
+						end
+						pcall(callback, value)
+						label.Text = value
+					end
+
+
+					backslider.InputBegan:connect(function(input)
+						if input.UserInputType == Enum.UserInputType.MouseButton1 then
+							dragyes = false
+							sliding = true
+							lib9:SetValue(min + ((input.Position.X - backslider.AbsolutePosition.X) / backslider.AbsoluteSize.X) * (max - min))
+						end
+						if input.UserInputType == Enum.UserInputType.MouseMovement then
+							dragyes = false
+							inContact = true
+						end
+					end)
+
+					game:service"UserInputService".InputChanged:connect(function(input)
+						if input.UserInputType == Enum.UserInputType.MouseMovement and sliding then
+							dragyes = false
+							lib9:SetValue(min + ((input.Position.X - backslider.AbsolutePosition.X) / backslider.AbsoluteSize.X) * (max - min))
+						end
+					end)
+
+					backslider.InputEnded:connect(function(input)
+						if input.UserInputType == Enum.UserInputType.MouseButton1 then
+							sliding = false
+							dragyes = true
+						end
+						if input.UserInputType == Enum.UserInputType.MouseMovement then
+							inContact = false
+							dragyes = true
+						end
+					end)
+					
+					lib9:SetValue(def)
+					
+					return lib9
+					
+				end
+				
+				
+				return lib6
+				
+				
+			end
+			
+			return lib5
+			
+		end
+		
+		return lib4
+		
+	end
+	
+	return lib3
+	
+end
+
+function library:CreateWatermark(text)
+
+	local ui = Instance.new("ScreenGui")
+	local top = Instance.new("Frame")
+	local label = Instance.new("TextLabel")
+	local counter = 0
+
+	ui.Name = game:service"HttpService":GenerateGUID(false)
+	ui.Parent = game.CoreGui
+	ui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	top.Name = "top"
+	top.Parent = ui
+	top.BackgroundColor3 = Color3.fromRGB(165, 146, 239)
+	top.BorderSizePixel = 0
+	top.Position = UDim2.new(0, 5, 1, -27)
+	top.Size = UDim2.new(0, 0, 0, 2)
+
+	label.Name = "label"
+	label.Parent = top
+	label.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+	label.BackgroundTransparency = 0.2
+	label.BorderSizePixel = 0
+	label.Position = UDim2.new(0, 0, 0, 2)
+	label.Size = UDim2.new(0, 0, 0, 20)
+	label.Font = Enum.Font.SourceSansSemibold
+	label.Text = text
+	label.TextColor3 = Color3.fromRGB(255, 255, 255)
+	label.TextSize = 13.000
+
+	while label.TextFits == false do
+		counter = counter + 17
+		label.Size = UDim2.new(0, counter, 0, 20)
+		top.Size = UDim2.new(0, counter, 0, 2)
+	end
+	
+	local lib2 = {}
+	
+	function lib2:ChangeText(newtext)
+		counter = 0
+		label.Text = newtext
+		while label.TextFits == false do
+			counter = counter + 17
+			label.Size = UDim2.new(0, counter, 0, 20)
+			top.Size = UDim2.new(0, counter, 0, 2)
+		end
+	end
+	
+	return lib2
+
+end
+
+return library
