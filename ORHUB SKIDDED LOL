@@ -1,0 +1,1187 @@
+--crack this shit. It has a loadstring in it LLOL.
+
+--[[
+AztupBrew(Fork of IronBrew2): obfuscation; Version 2.7.2
+]]
+return (function(IIIllIIIlI, lIlIlIlIll, lIlIlIlIll)
+    local lIlIlIlIlIIIIIlIlIIIll = string.char
+    local IIIIllllIIIllIIlIlIlIlI = string.sub
+    local lllllIIlIIlllIl = table.concat
+    local lIIIIIlllIlII = math.ldexp
+    local IIIIIllIll = getfenv or function()
+            return _ENV
+        end
+    local lIlIIIllIllIIIIIIlIlllII = select
+    local lllIIlllIlllIlII = unpack or table.unpack
+    local lIlIlIlIll = tonumber
+    local IIIlIIllIIIIIIII =
+        "\221\217\217\217\216\211\217\217\217\181\182\184\189\170\173\171\176\183\190\216\221\217\217\217\190\184\180\188\216\222\217\217\217\145\173\173\169\158\188\173\216\226\217\217\217\119\85\48\188\69\42\98\34\231\10\35\24\187\201\69\239\82\247\168\165\128\175\179\45\28\126\186\161\246\47\129\215\31\13\226\30\156\67\247\158\105\137\84\16\97\127\251\254\162\117\52\157\162\67\33\54\91\173\210\216\217\217\217\211\217\217\217\216\200\217\217\217\144\155\134\144\151\149\144\151\144\151\158\134\138\141\152\139\141\216\217\217\217\217\216\223\217\217\217\170\173\171\176\183\190\216\218\217\217\217\170\172\187\216\221\217\217\217\186\177\184\171\218\217\217\217\217\217\217\217\217\218\217\217\217\217\217\57\182\153\218\217\217\217\217\217\217\41\230\216\228\217\217\217\31\33\68\204\54\16\77\13\149\107\84\54\220\160\49\135\39\149\221\214\229\221\208\66\114\10\223\207\130\1\226\184\114\34\131\121\248\112\158\177\6\251\60\101\3\80\150\159\203\27\27\255\208\54\73\24\55\216\179\194\26\218\217\217\217\217\217\89\151\153\216\217\217\217\221\217\217\217\216\200\217\217\217\144\155\134\144\151\149\144\151\144\151\158\134\138\141\152\139\141\218\217\217\217\217\217\217\41\230\218\217\217\217\217\217\217\217\217\218\217\217\217\217\217\217\217\153\217\217\217\217\255\217\217\217\203\239\217\219\217\216\217\217\217\217\217\217\218\217\216\217\217\217\217\217\217\219\217\219\217\216\217\203\217\217\219\217\219\217\217\217\203\217\217\218\217\218\217\217\217\215\159\217\218\217\207\217\216\217\217\217\221\226\217\217\217\207\217\216\217\215\159\217\218\217\207\217\216\217\216\217\221\226\217\217\217\207\217\216\217\249\224\217\221\217\217\217\221\217\249\224\217\220\217\216\217\221\217\223\155\217\221\217\215\217\216\217\220\217\221\226\217\217\217\215\217\216\217\217\244\217\218\217\218\217\219\217\217\249\217\223\217\217\217\221\217\249\237\217\223\217\223\217\221\217\217\217\217\222\217\216\217\220\217\249\217\217\222\217\222\217\221\217\249\217\217\219\217\219\217\221\217\217\217\217\216\217\222\217\217\217\217\217\217\217\217\223\217\217\217\221\217\217\217\217\220\217\216\217\223\251\217\217\217\192\217\216\217\216\217\221\226\217\217\217\192\217\216\217\217\246\217\217\217\216\217\217\217\215\159\217\218\217\253\217\216\217\217\217\221\226\217\217\217\253\217\216\217\249\224\217\221\217\217\217\221\217\215\159\217\218\217\198\217\216\217\221\217\221\226\217\217\217\198\217\216\217\217\244\217\218\217\218\217\219\217\217\249\217\220\217\217\217\221\217\249\193\217\220\217\220\217\221\217\249\248\217\219\217\219\217\221\217\217\246\217\217\217\220\217\217\217\221\226\217\217\217\192\217\216\217\217\156\217\218\217\219\217\217\217\217\200\217\217\217\216\217\217\217\255\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\219\233\217\217\217\203\205\217\216\217\216\217\217\217\217\223\217\219\217\216\217\217\217\217\218\217\216\217\219\217\216\217\219\254\217\216\217\217\217\217\217\203\247\217\219\217\219\217\217\217\203\217\217\218\217\218\217\217\217\249\217\217\218\217\218\217\221\217\203\217\217\221\217\218\217\217\217\249\217\217\221\217\221\217\220\217\217\217\217\220\217\217\217\217\217\203\217\217\223\217\223\217\217\217\203\217\217\222\217\222\217\217\217\203\217\217\209\217\209\217\217\217\221\217\217\223\217\205\217\216\217\217\246\217\211\217\221\217\217\217\217\246\217\210\217\208\217\217\217\217\203\217\211\217\219\217\219\217\217\209\217\220\217\208\217\211\217\217\209\217\220\217\211\217\208\217\221\194\217\223\217\215\217\216\217\203\245\217\223\217\208\217\217\217\203\245\217\222\217\209\217\217\217\217\240\217\209\217\217\217\217\217\203\245\217\208\217\209\217\217\217\221\212\217\222\217\247\217\216\217\249\210\217\210\217\211\217\209\217\249\153\217\210\217\210\217\211\217\249\217\217\210\217\210\217\209\217\217\217\217\213\217\219\217\217\217\217\217\217\212\217\216\217\217\217\217\217\217\215\217\218\217\217\217\217\217\217\214\217\217\217\217\217\217\217\217\201\217\211\217\217\217\217\217\217\200\217\211\217\217\217\217\217\217\215\217\200\217\219\217\217\217\217\215\217\220\217\215\217\217\217\217\214\217\218\217\217\217\217\217\217\201\217\223\217\217\217\217\217\217\200\217\210\217\217\217\217\217\217\203\217\210\217\217\217\217\217\217\214\217\203\217\219\217\217\217\217\214\217\220\217\214\217\217\217\217\212\217\214\217\219\217\217\217\217\212\217\220\217\212\217\217\217\217\219\217\213\217\212\217\221\194\217\222\217\192\217\216\217\217\156\217\219\217\219\217\217\217\217\200\217\217\217\216\217\217\217\233\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\210\217\217\217\203\205\217\217\217\216\217\217\217\203\205\217\216\217\219\217\217\217\249\253\217\216\217\216\217\218\217\219\254\217\218\217\217\217\217\217\203\242\217\221\217\221\217\217\217\217\217\217\218\217\219\217\219\217\217\217\217\221\217\216\217\217\217\217\217\217\216\217\221\217\217\217\217\217\217\217\217\217\217\219\217\217\217\217\217\217\216\217\216\217\217\217\217\217\217\216\217\217\217\210\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\216\217\217\217\217"
+    local lIlIlIlIll = (bit or bit32)
+    local IIIllllIIIll =
+        lIlIlIlIll and lIlIlIlIll.bxor or
+        function(lIlIlIlIll, lIllllIIIIl)
+            local llllllIIIIIllI, IIIllllIIIll, lIlIlIIlllIlIl = 1, 0, 10
+            while lIlIlIlIll > 0 and lIllllIIIIl > 0 do
+                local lllIIlllIlllIlII, lIlIlIIlllIlIl = lIlIlIlIll % 2, lIllllIIIIl % 2
+                if lllIIlllIlllIlII ~= lIlIlIIlllIlIl then
+                    IIIllllIIIll = IIIllllIIIll + llllllIIIIIllI
+                end
+                lIlIlIlIll, lIllllIIIIl, llllllIIIIIllI =
+                    (lIlIlIlIll - lllIIlllIlllIlII) / 2,
+                    (lIllllIIIIl - lIlIlIIlllIlIl) / 2,
+                    llllllIIIIIllI * 2
+            end
+            if lIlIlIlIll < lIllllIIIIl then
+                lIlIlIlIll = lIllllIIIIl
+            end
+            while lIlIlIlIll > 0 do
+                local lIllllIIIIl = lIlIlIlIll % 2
+                if lIllllIIIIl > 0 then
+                    IIIllllIIIll = IIIllllIIIll + llllllIIIIIllI
+                end
+                lIlIlIlIll, llllllIIIIIllI = (lIlIlIlIll - lIllllIIIIl) / 2, llllllIIIIIllI * 2
+            end
+            return IIIllllIIIll
+        end
+    local function lIllllIIIIl(llllllIIIIIllI, lIlIlIlIll, lIllllIIIIl)
+        if lIllllIIIIl then
+            local lIlIlIlIll = (llllllIIIIIllI / 2 ^ (lIlIlIlIll - 1)) % 2 ^ ((lIllllIIIIl - 1) - (lIlIlIlIll - 1) + 1)
+            return lIlIlIlIll - lIlIlIlIll % 1
+        else
+            local lIlIlIlIll = 2 ^ (lIlIlIlIll - 1)
+            return (llllllIIIIIllI % (lIlIlIlIll + lIlIlIlIll) >= lIlIlIlIll) and 1 or 0
+        end
+    end
+    local lIlIlIlIll = 1
+    local function llllllIIIIIllI()
+        local lIllllIIIIl, llllllIIIIIllI, lIlIlIIlllIlIl, lllIIlllIlllIlII =
+            IIIllIIIlI(IIIlIIllIIIIIIII, lIlIlIlIll, lIlIlIlIll + 3)
+        lIllllIIIIl = IIIllllIIIll(lIllllIIIIl, 217)
+        llllllIIIIIllI = IIIllllIIIll(llllllIIIIIllI, 217)
+        lIlIlIIlllIlIl = IIIllllIIIll(lIlIlIIlllIlIl, 217)
+        lllIIlllIlllIlII = IIIllllIIIll(lllIIlllIlllIlII, 217)
+        lIlIlIlIll = lIlIlIlIll + 4
+        return (lllIIlllIlllIlII * 16777216) + (lIlIlIIlllIlIl * 65536) + (llllllIIIIIllI * 256) + lIllllIIIIl
+    end
+    local function lIlllIIIllIlIIllIIlllllII()
+        local llllllIIIIIllI = IIIllllIIIll(IIIllIIIlI(IIIlIIllIIIIIIII, lIlIlIlIll, lIlIlIlIll), 217)
+        lIlIlIlIll = lIlIlIlIll + 1
+        return llllllIIIIIllI
+    end
+    local function lIlIlIIlllIlIl()
+        local llllllIIIIIllI, lIllllIIIIl = IIIllIIIlI(IIIlIIllIIIIIIII, lIlIlIlIll, lIlIlIlIll + 2)
+        llllllIIIIIllI = IIIllllIIIll(llllllIIIIIllI, 217)
+        lIllllIIIIl = IIIllllIIIll(lIllllIIIIl, 217)
+        lIlIlIlIll = lIlIlIlIll + 2
+        return (lIllllIIIIl * 256) + llllllIIIIIllI
+    end
+    local function IIlllIlIIII()
+        local lIlIlIlIll = llllllIIIIIllI()
+        local llllllIIIIIllI = llllllIIIIIllI()
+        local lIlIlIIlllIlIl = 1
+        local IIIllllIIIll = (lIllllIIIIl(llllllIIIIIllI, 1, 20) * (2 ^ 32)) + lIlIlIlIll
+        local lIlIlIlIll = lIllllIIIIl(llllllIIIIIllI, 21, 31)
+        local llllllIIIIIllI = ((-1) ^ lIllllIIIIl(llllllIIIIIllI, 32))
+        if (lIlIlIlIll == 0) then
+            if (IIIllllIIIll == 0) then
+                return llllllIIIIIllI * 0
+            else
+                lIlIlIlIll = 1
+                lIlIlIIlllIlIl = 0
+            end
+        elseif (lIlIlIlIll == 2047) then
+            return (IIIllllIIIll == 0) and (llllllIIIIIllI * (1 / 0)) or (llllllIIIIIllI * (0 / 0))
+        end
+        return lIIIIIlllIlII(llllllIIIIIllI, lIlIlIlIll - 1023) * (lIlIlIIlllIlIl + (IIIllllIIIll / (2 ^ 52)))
+    end
+    local lIIIIIlllIlII = llllllIIIIIllI
+    local function IlIllIlIlIIlllllIlllIllII(llllllIIIIIllI)
+        local lIllllIIIIl
+        if (not llllllIIIIIllI) then
+            llllllIIIIIllI = lIIIIIlllIlII()
+            if (llllllIIIIIllI == 0) then
+                return ""
+            end
+        end
+        lIllllIIIIl = IIIIllllIIIllIIlIlIlIlI(IIIlIIllIIIIIIII, lIlIlIlIll, lIlIlIlIll + llllllIIIIIllI - 1)
+        lIlIlIlIll = lIlIlIlIll + llllllIIIIIllI
+        local llllllIIIIIllI = {}
+        for lIlIlIlIll = 1, #lIllllIIIIl do
+            llllllIIIIIllI[lIlIlIlIll] =
+                lIlIlIlIlIIIIIlIlIIIll(
+                IIIllllIIIll(IIIllIIIlI(IIIIllllIIIllIIlIlIlIlI(lIllllIIIIl, lIlIlIlIll, lIlIlIlIll)), 217)
+            )
+        end
+        return lllllIIlIIlllIl(llllllIIIIIllI)
+    end
+    local lIlIlIlIll = llllllIIIIIllI
+    local function lIIIIIlllIlII(...)
+        return {...}, lIlIIIllIllIIIIIIlIlllII("#", ...)
+    end
+    local function lIlIlIlIlIIIIIlIlIIIll()
+        local IIIlIIllIIIIIIII = {}
+        local IIIllllIIIll = {}
+        local IIIIllllIIIllIIlIlIlIlI = {}
+        local lllllIIlIIlllIl = {
+            [#{{558, 995, 961, 404}, {378, 589, 975, 584}}] = IIIllllIIIll,
+            [#{"1 + 1 = 111", "1 + 1 = 111", "1 + 1 = 111"}] = nil,
+            [#{{691, 690, 786, 862}, {142, 283, 29, 730}, {177, 70, 568, 894}, {895, 256, 626, 836}}] = IIIIllllIIIllIIlIlIlIlI,
+            [#{"1 + 1 = 111"}] = IIIlIIllIIIIIIII
+        }
+        local lIlIlIlIll = llllllIIIIIllI()
+        local lllIIlllIlllIlII = {}
+        for lIllllIIIIl = 1, lIlIlIlIll do
+            local llllllIIIIIllI = lIlllIIIllIlIIllIIlllllII()
+            local lIlIlIlIll
+            if (llllllIIIIIllI == 2) then
+                lIlIlIlIll = (lIlllIIIllIlIIllIIlllllII() ~= 0)
+            elseif (llllllIIIIIllI == 3) then
+                lIlIlIlIll = IIlllIlIIII()
+            elseif (llllllIIIIIllI == 1) then
+                lIlIlIlIll = IlIllIlIlIIlllllIlllIllII()
+            end
+            lllIIlllIlllIlII[lIllllIIIIl] = lIlIlIlIll
+        end
+        for lIlIlIlIll = 1, llllllIIIIIllI() do
+            IIIllllIIIll[lIlIlIlIll - 1] = lIlIlIlIlIIIIIlIlIIIll()
+        end
+        for IIIIllllIIIllIIlIlIlIlI = 1, llllllIIIIIllI() do
+            local lIlIlIlIll = lIlllIIIllIlIIllIIlllllII()
+            if (lIllllIIIIl(lIlIlIlIll, 1, 1) == 0) then
+                local IIIllllIIIll = lIllllIIIIl(lIlIlIlIll, 2, 3)
+                local IIIllIIIlI = lIllllIIIIl(lIlIlIlIll, 4, 6)
+                local lIlIlIlIll = {lIlIlIIlllIlIl(), lIlIlIIlllIlIl(), nil, nil}
+                if (IIIllllIIIll == 0) then
+                    lIlIlIlIll[#("Cr3")] = lIlIlIIlllIlIl()
+                    lIlIlIlIll[#("CGIZ")] = lIlIlIIlllIlIl()
+                elseif (IIIllllIIIll == 1) then
+                    lIlIlIlIll[#("l6E")] = llllllIIIIIllI()
+                elseif (IIIllllIIIll == 2) then
+                    lIlIlIlIll[#("kK2")] = llllllIIIIIllI() - (2 ^ 16)
+                elseif (IIIllllIIIll == 3) then
+                    lIlIlIlIll[#("MEr")] = llllllIIIIIllI() - (2 ^ 16)
+                    lIlIlIlIll[#("S99M")] = lIlIlIIlllIlIl()
+                end
+                if (lIllllIIIIl(IIIllIIIlI, 1, 1) == 1) then
+                    lIlIlIlIll[#("kM")] = lllIIlllIlllIlII[lIlIlIlIll[#("Ap")]]
+                end
+                if (lIllllIIIIl(IIIllIIIlI, 2, 2) == 1) then
+                    lIlIlIlIll[#("tuX")] =
+                        lllIIlllIlllIlII[lIlIlIlIll[#{{223, 13, 111, 359}, {739, 273, 383, 230}, "1 + 1 = 111"}]]
+                end
+                if (lIllllIIIIl(IIIllIIIlI, 3, 3) == 1) then
+                    lIlIlIlIll[#("OOhM")] = lllIIlllIlllIlII[lIlIlIlIll[#("ushJ")]]
+                end
+                IIIlIIllIIIIIIII[IIIIllllIIIllIIlIlIlIlI] = lIlIlIlIll
+            end
+        end
+        for lIlIlIlIll = 1, llllllIIIIIllI() do
+            IIIIllllIIIllIIlIlIlIlI[lIlIlIlIll] = llllllIIIIIllI()
+        end
+        lllllIIlIIlllIl[3] = lIlllIIIllIlIIllIIlllllII()
+        return lllllIIlIIlllIl
+    end
+    local IlIllIlIlIIlllllIlllIllII = pcall
+    local function IIIIllllIIIllIIlIlIlIlI(lIlllIIIllIlIIllIIlllllII, lIlIlIlIll, IIIlIIllIIIIIIII)
+        lIlllIIIllIlIIllIIlllllII =
+            (lIlllIIIllIlIIllIIlllllII == true and lIlIlIlIlIIIIIlIlIIIll()) or lIlllIIIllIlIIllIIlllllII
+        return (function(...)
+            local lIllllIIIIl = 1
+            local IIIllIIIlI = -1
+            local lIlIlIlIlIIIIIlIlIIIll = {...}
+            local lllllIIlIIlllIl = lIlIIIllIllIIIIIIlIlllII("#", ...) - 1
+            local lIlIlIIlllIlIl = lIlllIIIllIlIIllIIlllllII[#{{838, 134, 115, 497}}]
+            local IIIllllIIIll = lIlllIIIllIlIIllIIlllllII[#{"1 + 1 = 111", {926, 508, 346, 634}, "1 + 1 = 111"}]
+            local lIlIIIllIllIIIIIIlIlllII = lIlllIIIllIlIIllIIlllllII[#{{759, 361, 922, 95}, "1 + 1 = 111"}]
+            local function IIIIIllIll()
+                local lIlllIIIllIlIIllIIlllllII = lIIIIIlllIlII
+                local lIIIIIlllIlII = {}
+                local lIlIlIlIll = {}
+                local llllllIIIIIllI = {}
+                for lIlIlIlIll = 0, lllllIIlIIlllIl do
+                    if (lIlIlIlIll >= IIIllllIIIll) then
+                        lIIIIIlllIlII[lIlIlIlIll - IIIllllIIIll] = lIlIlIlIlIIIIIlIlIIIll[lIlIlIlIll + 1]
+                    else
+                        llllllIIIIIllI[lIlIlIlIll] = lIlIlIlIlIIIIIlIlIIIll[lIlIlIlIll + 1]
+                    end
+                end
+                local lIlIlIlIll = lllllIIlIIlllIl - IIIllllIIIll + 1
+                local lIlIlIlIll
+                local IIIllllIIIll
+                while true do
+                    lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                    IIIllllIIIll = lIlIlIlIll[#("s")]
+                    if IIIllllIIIll <= #("4uAs34kaviUDkCtTxWaJzWaonoOY4xR0ul") then
+                        if IIIllllIIIll <= #("rl1xOMmj28hNo2oM") then
+                            if IIIllllIIIll <= #("I9phtke") then
+                                if IIIllllIIIll <= #("pxf") then
+                                    if IIIllllIIIll <= #("B") then
+                                        if IIIllllIIIll == #("") then
+                                            local IIIllllIIIll = lIlIlIlIll[#{{629, 517, 223, 463}, "1 + 1 = 111"}]
+                                            local lIlIlIIlllIlIl = llllllIIIIIllI[IIIllllIIIll]
+                                            local lllIIlllIlllIlII = llllllIIIIIllI[IIIllllIIIll + 2]
+                                            if (lllIIlllIlllIlII > 0) then
+                                                if (lIlIlIIlllIlIl > llllllIIIIIllI[IIIllllIIIll + 1]) then
+                                                    lIllllIIIIl = lIlIlIlIll[#("yAH")]
+                                                else
+                                                    llllllIIIIIllI[IIIllllIIIll + 3] = lIlIlIIlllIlIl
+                                                end
+                                            elseif (lIlIlIIlllIlIl < llllllIIIIIllI[IIIllllIIIll + 1]) then
+                                                lIllllIIIIl = lIlIlIlIll[#("m9H")]
+                                            else
+                                                llllllIIIIIllI[IIIllllIIIll + 3] = lIlIlIIlllIlIl
+                                            end
+                                        else
+                                            llllllIIIIIllI[lIlIlIlIll[#("tY")]] =
+                                                llllllIIIIIllI[lIlIlIlIll[#("1fm")]][
+                                                llllllIIIIIllI[lIlIlIlIll[#("DceE")]]
+                                            ]
+                                        end
+                                    elseif IIIllllIIIll > #("9g") then
+                                        local lIlIlIlIll = lIlIlIlIll[#("re")]
+                                        llllllIIIIIllI[lIlIlIlIll](llllllIIIIIllI[lIlIlIlIll + 1])
+                                    else
+                                        llllllIIIIIllI[lIlIlIlIll[#("sy")]] =
+                                            llllllIIIIIllI[lIlIlIlIll[#("Nb0")]] % lIlIlIlIll[#("HR2U")]
+                                    end
+                                elseif
+                                    IIIllllIIIll <=
+                                        #{
+                                            "1 + 1 = 111",
+                                            "1 + 1 = 111",
+                                            "1 + 1 = 111",
+                                            "1 + 1 = 111",
+                                            {820, 316, 33, 895}
+                                        }
+                                 then
+                                    if IIIllllIIIll == #("Nhqf") then
+                                        local lIlIlIlIll = lIlIlIlIll[#("cr")]
+                                        llllllIIIIIllI[lIlIlIlIll](llllllIIIIIllI[lIlIlIlIll + 1])
+                                    else
+                                        local lIllllIIIIl = lIlIlIlIll[#("y2")]
+                                        local IIIllllIIIll, lIlIlIlIll =
+                                            lIlllIIIllIlIIllIIlllllII(
+                                            llllllIIIIIllI[lIllllIIIIl](
+                                                lllIIlllIlllIlII(llllllIIIIIllI, lIllllIIIIl + 1, lIlIlIlIll[#("YjJ")])
+                                            )
+                                        )
+                                        IIIllIIIlI = lIlIlIlIll + lIllllIIIIl - 1
+                                        local lIlIlIlIll = 0
+                                        for lIllllIIIIl = lIllllIIIIl, IIIllIIIlI do
+                                            lIlIlIlIll = lIlIlIlIll + 1
+                                            llllllIIIIIllI[lIllllIIIIl] = IIIllllIIIll[lIlIlIlIll]
+                                        end
+                                    end
+                                elseif IIIllllIIIll == #("z6PU6s") then
+                                    llllllIIIIIllI[lIlIlIlIll[#("2Z")]] = (lIlIlIlIll[#("aum")] ~= 0)
+                                else
+                                    llllllIIIIIllI[lIlIlIlIll[#("gZ")]] =
+                                        llllllIIIIIllI[lIlIlIlIll[#("zWi")]] + lIlIlIlIll[#("75zz")]
+                                end
+                            elseif IIIllllIIIll <= #("5n7bXSypgjC") then
+                                if
+                                    IIIllllIIIll <=
+                                        #{
+                                            {519, 555, 854, 975},
+                                            "1 + 1 = 111",
+                                            "1 + 1 = 111",
+                                            {590, 37, 971, 353},
+                                            {304, 534, 763, 990},
+                                            "1 + 1 = 111",
+                                            "1 + 1 = 111",
+                                            "1 + 1 = 111",
+                                            {191, 274, 556, 176}
+                                        }
+                                 then
+                                    if
+                                        IIIllllIIIll ==
+                                            #{
+                                                "1 + 1 = 111",
+                                                "1 + 1 = 111",
+                                                {475, 347, 690, 42},
+                                                {951, 357, 720, 497},
+                                                {550, 621, 72, 542},
+                                                {101, 213, 28, 799},
+                                                "1 + 1 = 111",
+                                                "1 + 1 = 111"
+                                            }
+                                     then
+                                        llllllIIIIIllI[lIlIlIlIll[#("Fq")]][llllllIIIIIllI[lIlIlIlIll[#("qp1")]]] =
+                                            llllllIIIIIllI[lIlIlIlIll[#("grOM")]]
+                                    else
+                                        llllllIIIIIllI[lIlIlIlIll[#("BI")]] =
+                                            llllllIIIIIllI[lIlIlIlIll[#("8Md")]] + lIlIlIlIll[#("bGC0")]
+                                    end
+                                elseif IIIllllIIIll == #("FLVe2dGSQ8") then
+                                    do
+                                        return
+                                    end
+                                else
+                                    llllllIIIIIllI[lIlIlIlIll[#("zT")]] =
+                                        llllllIIIIIllI[lIlIlIlIll[#("ALO")]] - lIlIlIlIll[#("9kdu")]
+                                end
+                            elseif IIIllllIIIll <= #("fDQlf7qg7MLgu") then
+                                if IIIllllIIIll > #("TWgYOHZQ46Dp") then
+                                    local IIIllllIIIll = lIlIlIlIll[#{"1 + 1 = 111", "1 + 1 = 111"}]
+                                    local lIlIlIIlllIlIl = llllllIIIIIllI[IIIllllIIIll]
+                                    local lllIIlllIlllIlII = llllllIIIIIllI[IIIllllIIIll + 2]
+                                    if (lllIIlllIlllIlII > 0) then
+                                        if (lIlIlIIlllIlIl > llllllIIIIIllI[IIIllllIIIll + 1]) then
+                                            lIllllIIIIl = lIlIlIlIll[#("dL5")]
+                                        else
+                                            llllllIIIIIllI[IIIllllIIIll + 3] = lIlIlIIlllIlIl
+                                        end
+                                    elseif (lIlIlIIlllIlIl < llllllIIIIIllI[IIIllllIIIll + 1]) then
+                                        lIllllIIIIl = lIlIlIlIll[#("qO7")]
+                                    else
+                                        llllllIIIIIllI[IIIllllIIIll + 3] = lIlIlIIlllIlIl
+                                    end
+                                else
+                                    local lIlIlIlIll = lIlIlIlIll[#("01")]
+                                    llllllIIIIIllI[lIlIlIlIll] =
+                                        llllllIIIIIllI[lIlIlIlIll](
+                                        lllIIlllIlllIlII(llllllIIIIIllI, lIlIlIlIll + 1, IIIllIIIlI)
+                                    )
+                                end
+                            elseif IIIllllIIIll <= #("qWlzPnt8bFT2fK") then
+                                llllllIIIIIllI[lIlIlIlIll[#("sF")]] = IIIlIIllIIIIIIII[lIlIlIlIll[#("ECp")]]
+                            elseif IIIllllIIIll == #("EN4FBmirA3bB2zJ") then
+                                llllllIIIIIllI[lIlIlIlIll[#{{236, 704, 775, 121}, {549, 341, 864, 406}}]] =
+                                    llllllIIIIIllI[lIlIlIlIll[#("Dxq")]][lIlIlIlIll[#("5DV0")]]
+                            else
+                                do
+                                    return llllllIIIIIllI[lIlIlIlIll[#("Ij")]]
+                                end
+                            end
+                        elseif IIIllllIIIll <= #("S0y9tVn53a2Rqy5J6Gmqc8Yxh") then
+                            if IIIllllIIIll <= #("WGNWBKDVacRL9SA8LAtC") then
+                                if
+                                    IIIllllIIIll <=
+                                        #{
+                                            {277, 624, 979, 250},
+                                            {432, 327, 641, 44},
+                                            "1 + 1 = 111",
+                                            "1 + 1 = 111",
+                                            "1 + 1 = 111",
+                                            "1 + 1 = 111",
+                                            "1 + 1 = 111",
+                                            {25, 634, 921, 123},
+                                            {825, 37, 525, 130},
+                                            {512, 610, 356, 43},
+                                            {609, 889, 707, 872},
+                                            {141, 888, 21, 366},
+                                            {864, 788, 632, 264},
+                                            {761, 830, 942, 98},
+                                            {891, 950, 423, 381},
+                                            "1 + 1 = 111",
+                                            {571, 262, 821, 819},
+                                            "1 + 1 = 111"
+                                        }
+                                 then
+                                    if IIIllllIIIll > #("oGx31vHF0eyzcQEUI") then
+                                        local lIlIlIlIll = lIlIlIlIll[#{"1 + 1 = 111", {617, 265, 122, 621}}]
+                                        llllllIIIIIllI[lIlIlIlIll] =
+                                            llllllIIIIIllI[lIlIlIlIll](llllllIIIIIllI[lIlIlIlIll + 1])
+                                    else
+                                        do
+                                            return
+                                        end
+                                    end
+                                elseif IIIllllIIIll > #("reykeqbQTjSSQE0bmFO") then
+                                    llllllIIIIIllI[lIlIlIlIll[#("PI")]] =
+                                        IIIlIIllIIIIIIII[
+                                        lIlIlIlIll[#{"1 + 1 = 111", {628, 335, 455, 681}, "1 + 1 = 111"}]
+                                    ]
+                                else
+                                    local IIIllllIIIll = lIlIlIlIll[#("0Hb")]
+                                    local lIllllIIIIl = llllllIIIIIllI[IIIllllIIIll]
+                                    for lIlIlIlIll = IIIllllIIIll + 1, lIlIlIlIll[#("zBeL")] do
+                                        lIllllIIIIl = lIllllIIIIl .. llllllIIIIIllI[lIlIlIlIll]
+                                    end
+                                    llllllIIIIIllI[lIlIlIlIll[#("t0")]] = lIllllIIIIl
+                                end
+                            elseif
+                                IIIllllIIIll <=
+                                    #{
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        {935, 751, 255, 517},
+                                        {900, 867, 680, 443},
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        {422, 184, 174, 45},
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        {97, 164, 465, 59},
+                                        "1 + 1 = 111",
+                                        {421, 982, 251, 815},
+                                        {687, 113, 621, 237},
+                                        "1 + 1 = 111",
+                                        {827, 663, 672, 114},
+                                        {770, 823, 111, 328},
+                                        "1 + 1 = 111"
+                                    }
+                             then
+                                if IIIllllIIIll > #("xWiz3JbE8gDIjoQSD5yRI") then
+                                    local IIIllllIIIll = lIlIlIlIll[#("uY")]
+                                    local lIllllIIIIl = llllllIIIIIllI[lIlIlIlIll[#("oXP")]]
+                                    llllllIIIIIllI[IIIllllIIIll + 1] = lIllllIIIIl
+                                    llllllIIIIIllI[IIIllllIIIll] = lIllllIIIIl[lIlIlIlIll[#("agp6")]]
+                                else
+                                    llllllIIIIIllI[lIlIlIlIll[#("D0")]] =
+                                        llllllIIIIIllI[
+                                        lIlIlIlIll[#{{159, 796, 271, 707}, {759, 443, 188, 905}, {427, 581, 684, 412}}]
+                                    ] * lIlIlIlIll[#("SoTW")]
+                                end
+                            elseif IIIllllIIIll <= #("EIIPugieImBGD5tnDe7SxiR") then
+                                llllllIIIIIllI[lIlIlIlIll[#("v4")]] =
+                                    IIIIllllIIIllIIlIlIlIlI(
+                                    lIlIIIllIllIIIIIIlIlllII[lIlIlIlIll[#("Fy2")]],
+                                    nil,
+                                    IIIlIIllIIIIIIII
+                                )
+                            elseif IIIllllIIIll > #("Pqpv8kEDeIsK0nn5u4JpgNVV") then
+                                llllllIIIIIllI[lIlIlIlIll[#("t4")]] = llllllIIIIIllI[lIlIlIlIll[#("zRD")]]
+                            else
+                                llllllIIIIIllI[lIlIlIlIll[#("8H")]] =
+                                    llllllIIIIIllI[lIlIlIlIll[#("Y1G")]] / lIlIlIlIll[#("dPGJ")]
+                            end
+                        elseif IIIllllIIIll <= #("oDtUZBv17ad0WfxT8C5MTxo0cxDJB") then
+                            if IIIllllIIIll <= #("cGF7TSjTog7S3nkeJYlHik0iP1n") then
+                                if IIIllllIIIll > #("SD8WAD7IvZvPJomYPbEbP8XOy4") then
+                                    local IIIllllIIIll = lIlIlIlIll[#{"1 + 1 = 111", "1 + 1 = 111"}]
+                                    local lllIIlllIlllIlII = llllllIIIIIllI[IIIllllIIIll + 2]
+                                    local lIlIlIIlllIlIl = llllllIIIIIllI[IIIllllIIIll] + lllIIlllIlllIlII
+                                    llllllIIIIIllI[IIIllllIIIll] = lIlIlIIlllIlIl
+                                    if (lllIIlllIlllIlII > 0) then
+                                        if (lIlIlIIlllIlIl <= llllllIIIIIllI[IIIllllIIIll + 1]) then
+                                            lIllllIIIIl = lIlIlIlIll[#("at6")]
+                                            llllllIIIIIllI[IIIllllIIIll + 3] = lIlIlIIlllIlIl
+                                        end
+                                    elseif (lIlIlIIlllIlIl >= llllllIIIIIllI[IIIllllIIIll + 1]) then
+                                        lIllllIIIIl = lIlIlIlIll[#("vbJ")]
+                                        llllllIIIIIllI[IIIllllIIIll + 3] = lIlIlIIlllIlIl
+                                    end
+                                else
+                                    llllllIIIIIllI[lIlIlIlIll[#("SB")]] = {}
+                                end
+                            elseif IIIllllIIIll == #("1Qvr2FQbWilsApNSUDH838bEOylY") then
+                                llllllIIIIIllI[lIlIlIlIll[#("a6")]]()
+                            else
+                                lIllllIIIIl = lIlIlIlIll[#("gmv")]
+                            end
+                        elseif IIIllllIIIll <= #("PtyGhg1aIEk2nAPESdWcpdl15C3O2NE") then
+                            if IIIllllIIIll == #("2rhYXWrjVSm8vfQIxa5tAVELiHKQmn") then
+                                llllllIIIIIllI[lIlIlIlIll[#("Wm")]] = {}
+                            else
+                                if (llllllIIIIIllI[lIlIlIlIll[#("AT")]] ~= llllllIIIIIllI[lIlIlIlIll[#("6Lo4")]]) then
+                                    lIllllIIIIl = lIllllIIIIl + 1
+                                else
+                                    lIllllIIIIl = lIlIlIlIll[#("Jtr")]
+                                end
+                            end
+                        elseif IIIllllIIIll <= #("49196s0Q5WNrI1nF0Vur2Sk3hXGQqmM6") then
+                            llllllIIIIIllI[lIlIlIlIll[#("QY")]] =
+                                llllllIIIIIllI[lIlIlIlIll[#("97t")]] - llllllIIIIIllI[lIlIlIlIll[#("vNHO")]]
+                        elseif IIIllllIIIll > #("Kr8FfUoGt9IXE5U5bU426pmY82iXjATjQ") then
+                            if (llllllIIIIIllI[lIlIlIlIll[#("rF")]] < llllllIIIIIllI[lIlIlIlIll[#("EkJT")]]) then
+                                lIllllIIIIl = lIllllIIIIl + 1
+                            else
+                                lIllllIIIIl = lIlIlIlIll[#("Hbc")]
+                            end
+                        else
+                            llllllIIIIIllI[lIlIlIlIll[#{{377, 188, 90, 106}, {12, 846, 633, 728}}]] =
+                                llllllIIIIIllI[lIlIlIlIll[#{"1 + 1 = 111", {620, 708, 401, 835}, "1 + 1 = 111"}]] *
+                                lIlIlIlIll[#("PmdS")]
+                        end
+                    elseif IIIllllIIIll <= #("8JoaUbgVISNgN1WVoDReLtfkGnLBv4qygU7kQb92VlRFl2pqbzkq") then
+                        if IIIllllIIIll <= #("MiODeEHBPzOBo934LenDZsAML8O8tA7U95FLsRMHDBg") then
+                            if IIIllllIIIll <= #("dd62vxBt6YNtTb2f0JgpC3CtFrL3CR9ymNJIbV") then
+                                if IIIllllIIIll <= #("78NYlsk1rZHR4u0tkLNyeVH1pYogfDtde6jq") then
+                                    if IIIllllIIIll == #("fqatBtd59edvtz6zyImCWIxdeVYGDN7kKGe") then
+                                        llllllIIIIIllI[lIlIlIlIll[#("Eu")]][llllllIIIIIllI[lIlIlIlIll[#("tTN")]]] =
+                                            llllllIIIIIllI[lIlIlIlIll[#("5qFc")]]
+                                    else
+                                        local lIllllIIIIl = lIlIlIlIll[#("jo")]
+                                        local IIIllllIIIll = llllllIIIIIllI[lIlIlIlIll[#("bmM")]]
+                                        llllllIIIIIllI[lIllllIIIIl + 1] = IIIllllIIIll
+                                        llllllIIIIIllI[lIllllIIIIl] = IIIllllIIIll[lIlIlIlIll[#("VCr6")]]
+                                    end
+                                elseif IIIllllIIIll > #("MdNBD5pUlVWexPQz7ZcH37pPGIDxg2VYtLWu4") then
+                                    llllllIIIIIllI[lIlIlIlIll[#("po")]] =
+                                        llllllIIIIIllI[lIlIlIlIll[#("1cO")]] /
+                                        lIlIlIlIll[#{"1 + 1 = 111", {542, 132, 629, 361}, "1 + 1 = 111", "1 + 1 = 111"}]
+                                else
+                                    if (llllllIIIIIllI[lIlIlIlIll[#("Sm")]] < llllllIIIIIllI[lIlIlIlIll[#("Ymkv")]]) then
+                                        lIllllIIIIl = lIllllIIIIl + 1
+                                    else
+                                        lIllllIIIIl = lIlIlIlIll[#("Grh")]
+                                    end
+                                end
+                            elseif IIIllllIIIll <= #("80sN1s9UiX6JnVDICOX854D3Nta8VW2vFl0loqf7") then
+                                if IIIllllIIIll > #("WAPAIOauWjiH50eyAaIsb9v4Ldc5qskI0tjFXDe") then
+                                    llllllIIIIIllI[lIlIlIlIll[#("eL")]] = lIlIlIlIll[#("bv0")]
+                                else
+                                    llllllIIIIIllI[lIlIlIlIll[#("Qu")]] =
+                                        IIIIllllIIIllIIlIlIlIlI(
+                                        lIlIIIllIllIIIIIIlIlllII[
+                                            lIlIlIlIll[#{"1 + 1 = 111", {498, 584, 261, 767}, {939, 923, 924, 547}}]
+                                        ],
+                                        nil,
+                                        IIIlIIllIIIIIIII
+                                    )
+                                end
+                            elseif IIIllllIIIll <= #("9N8MUYJvWYYqIPOXdVYEMedD9KQMQJK652syaUkXF") then
+                                llllllIIIIIllI[lIlIlIlIll[#("zR")]] = #llllllIIIIIllI[lIlIlIlIll[#("Igq")]]
+                            elseif IIIllllIIIll == #("iDF3alPxBcPKd5KGNki7Pmn2uPxqWtKb956L8fJF6t") then
+                                llllllIIIIIllI[lIlIlIlIll[#("W5")]]()
+                            else
+                                local IIIlIIllIIIIIIII
+                                local lIlIlIlIlIIIIIlIlIIIll, IIIIllllIIIllIIlIlIlIlI
+                                local IIIllllIIIll
+                                llllllIIIIIllI[lIlIlIlIll[#("DO")]] = lIlIlIlIll[#("r1h")]
+                                lIllllIIIIl = lIllllIIIIl + 1
+                                lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                IIIllllIIIll = lIlIlIlIll[#("dR")]
+                                llllllIIIIIllI[IIIllllIIIll] =
+                                    llllllIIIIIllI[IIIllllIIIll](llllllIIIIIllI[IIIllllIIIll + 1])
+                                lIllllIIIIl = lIllllIIIIl + 1
+                                lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                llllllIIIIIllI[lIlIlIlIll[#{{938, 872, 363, 29}, "1 + 1 = 111"}]] =
+                                    (lIlIlIlIll[#("ycs")] ~= 0)
+                                lIllllIIIIl = lIllllIIIIl + 1
+                                lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                IIIllllIIIll = lIlIlIlIll[#("Qo")]
+                                lIlIlIlIlIIIIIlIlIIIll, IIIIllllIIIllIIlIlIlIlI =
+                                    lIlllIIIllIlIIllIIlllllII(
+                                    llllllIIIIIllI[IIIllllIIIll](
+                                        lllIIlllIlllIlII(llllllIIIIIllI, IIIllllIIIll + 1, lIlIlIlIll[#("KxF")])
+                                    )
+                                )
+                                IIIllIIIlI = IIIIllllIIIllIIlIlIlIlI + IIIllllIIIll - 1
+                                IIIlIIllIIIIIIII = 0
+                                for lIlIlIlIll = IIIllllIIIll, IIIllIIIlI do
+                                    IIIlIIllIIIIIIII = IIIlIIllIIIIIIII + 1
+                                    llllllIIIIIllI[lIlIlIlIll] = lIlIlIlIlIIIIIlIlIIIll[IIIlIIllIIIIIIII]
+                                end
+                                lIllllIIIIl = lIllllIIIIl + 1
+                                lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                IIIllllIIIll = lIlIlIlIll[#("a0")]
+                                llllllIIIIIllI[IIIllllIIIll] =
+                                    llllllIIIIIllI[IIIllllIIIll](
+                                    lllIIlllIlllIlII(llllllIIIIIllI, IIIllllIIIll + 1, IIIllIIIlI)
+                                )
+                                lIllllIIIIl = lIllllIIIIl + 1
+                                lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                llllllIIIIIllI[lIlIlIlIll[#("3G")]]()
+                                lIllllIIIIl = lIllllIIIIl + 1
+                                lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                do
+                                    return
+                                end
+                            end
+                        elseif IIIllllIIIll <= #("IrvZyYFh9OHa6oNIuZzKhCNKh88HHMOavdQK908CrlLxC59") then
+                            if IIIllllIIIll <= #("vHnPITbgOVRzZ7KyaHP3IcJF06s51phm9Llay8DMbK5oj") then
+                                if IIIllllIIIll == #("NuMmx5qgYt8TZLBgoyNEznVKabdc18guupt7sO3l63X2") then
+                                    llllllIIIIIllI[lIlIlIlIll[#("ER")]] = lIlIlIlIll[#("SxM")]
+                                else
+                                    llllllIIIIIllI[lIlIlIlIll[#("nL")]] =
+                                        llllllIIIIIllI[lIlIlIlIll[#("sx3")]] + llllllIIIIIllI[lIlIlIlIll[#("xJMm")]]
+                                end
+                            elseif
+                                IIIllllIIIll >
+                                    #{
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        {425, 262, 255, 540},
+                                        "1 + 1 = 111",
+                                        {477, 735, 36, 598},
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        {280, 332, 344, 235},
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        {879, 349, 384, 537},
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        {459, 523, 471, 945},
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        {106, 608, 201, 624},
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        {567, 661, 465, 515},
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        {220, 462, 166, 258},
+                                        "1 + 1 = 111",
+                                        {52, 837, 728, 64},
+                                        {752, 753, 172, 813},
+                                        "1 + 1 = 111",
+                                        "1 + 1 = 111",
+                                        {50, 754, 456, 424},
+                                        {546, 700, 559, 157},
+                                        {956, 495, 238, 53},
+                                        {803, 756, 265, 23},
+                                        "1 + 1 = 111"
+                                    }
+                             then
+                                llllllIIIIIllI[lIlIlIlIll[#("sL")]] = llllllIIIIIllI[lIlIlIlIll[#("4Ud")]]
+                            else
+                                local IIIllIIIlI
+                                local lllIIlllIlllIlII
+                                local IIIllllIIIll
+                                llllllIIIIIllI[lIlIlIlIll[#("kA")]] = lIlIlIlIll[#("aIh")]
+                                lIllllIIIIl = lIllllIIIIl + 1
+                                lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                llllllIIIIIllI[lIlIlIlIll[#("aR")]] = IIIlIIllIIIIIIII[lIlIlIlIll[#("7XB")]]
+                                lIllllIIIIl = lIllllIIIIl + 1
+                                lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                llllllIIIIIllI[lIlIlIlIll[#("XR")]] =
+                                    llllllIIIIIllI[lIlIlIlIll[#("6NN")]][lIlIlIlIll[#("HPav")]]
+                                lIllllIIIIl = lIllllIIIIl + 1
+                                lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                llllllIIIIIllI[lIlIlIlIll[#("im")]] = IIIlIIllIIIIIIII[lIlIlIlIll[#("5jI")]]
+                                lIllllIIIIl = lIllllIIIIl + 1
+                                lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                llllllIIIIIllI[lIlIlIlIll[#("oU")]] =
+                                    llllllIIIIIllI[lIlIlIlIll[#("8US")]][lIlIlIlIll[#("1MYK")]]
+                                lIllllIIIIl = lIllllIIIIl + 1
+                                lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                llllllIIIIIllI[lIlIlIlIll[#("mz")]] = {}
+                                lIllllIIIIl = lIllllIIIIl + 1
+                                lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                llllllIIIIIllI[lIlIlIlIll[#("sQ")]] = lIlIlIlIll[#("0Ex")]
+                                lIllllIIIIl = lIllllIIIIl + 1
+                                lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                llllllIIIIIllI[lIlIlIlIll[#("jG")]] =
+                                    lIlIlIlIll[#{"1 + 1 = 111", {840, 717, 705, 990}, "1 + 1 = 111"}]
+                                lIllllIIIIl = lIllllIIIIl + 1
+                                lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                llllllIIIIIllI[lIlIlIlIll[#("Pr")]] = lIlIlIlIll[#("mae")]
+                                lIllllIIIIl = lIllllIIIIl + 1
+                                lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                IIIllllIIIll = lIlIlIlIll[#("No")]
+                                lllIIlllIlllIlII = llllllIIIIIllI[IIIllllIIIll]
+                                IIIllIIIlI = llllllIIIIIllI[IIIllllIIIll + 2]
+                                if (IIIllIIIlI > 0) then
+                                    if (lllIIlllIlllIlII > llllllIIIIIllI[IIIllllIIIll + 1]) then
+                                        lIllllIIIIl = lIlIlIlIll[#("X9E")]
+                                    else
+                                        llllllIIIIIllI[IIIllllIIIll + 3] = lllIIlllIlllIlII
+                                    end
+                                elseif (lllIIlllIlllIlII < llllllIIIIIllI[IIIllllIIIll + 1]) then
+                                    lIllllIIIIl = lIlIlIlIll[#("58A")]
+                                else
+                                    llllllIIIIIllI[IIIllllIIIll + 3] = lllIIlllIlllIlII
+                                end
+                            end
+                        elseif IIIllllIIIll <= #("CJtSO7PypLKShUdjhP8PE0CQxtlO4SExeGh5hZ2DnjgqLiY3F") then
+                            if IIIllllIIIll > #("IA7TXMgNvtVbEHhnOLMhcsXFCuTlfnFsiukezuTGYFDISmQK") then
+                                llllllIIIIIllI[lIlIlIlIll[#{{377, 916, 540, 864}, {768, 589, 339, 69}}]] =
+                                    llllllIIIIIllI[lIlIlIlIll[#("6JA")]][llllllIIIIIllI[lIlIlIlIll[#("Pfld")]]]
+                            else
+                                local IIIllllIIIll =
+                                    lIlIlIlIll[#{{205, 933, 765, 615}, "1 + 1 = 111", {499, 41, 950, 38}}]
+                                local lIllllIIIIl = llllllIIIIIllI[IIIllllIIIll]
+                                for lIlIlIlIll = IIIllllIIIll + 1, lIlIlIlIll[#("4vLL")] do
+                                    lIllllIIIIl = lIllllIIIIl .. llllllIIIIIllI[lIlIlIlIll]
+                                end
+                                llllllIIIIIllI[lIlIlIlIll[#{{719, 108, 371, 900}, {673, 824, 954, 185}}]] = lIllllIIIIl
+                            end
+                        elseif IIIllllIIIll <= #("xFmqyHpMCrD35IhYC2ixcYs2gsHZoWoOjbSSscVX4C7cqM36uT") then
+                            local IIIllllIIIll = lIlIlIlIll[#("MP")]
+                            local lllIIlllIlllIlII = llllllIIIIIllI[IIIllllIIIll + 2]
+                            local lIlIlIIlllIlIl = llllllIIIIIllI[IIIllllIIIll] + lllIIlllIlllIlII
+                            llllllIIIIIllI[IIIllllIIIll] = lIlIlIIlllIlIl
+                            if (lllIIlllIlllIlII > 0) then
+                                if (lIlIlIIlllIlIl <= llllllIIIIIllI[IIIllllIIIll + 1]) then
+                                    lIllllIIIIl = lIlIlIlIll[#("YAr")]
+                                    llllllIIIIIllI[IIIllllIIIll + 3] = lIlIlIIlllIlIl
+                                end
+                            elseif (lIlIlIIlllIlIl >= llllllIIIIIllI[IIIllllIIIll + 1]) then
+                                lIllllIIIIl = lIlIlIlIll[#("bAr")]
+                                llllllIIIIIllI[IIIllllIIIll + 3] = lIlIlIIlllIlIl
+                            end
+                        elseif IIIllllIIIll > #("uHmgJluje9ByPcYU30zGzguCL1qLEALEFH4g64iH83RXEdr9C29") then
+                            llllllIIIIIllI[lIlIlIlIll[#("Rm")]] =
+                                llllllIIIIIllI[lIlIlIlIll[#("kf8")]] / lIlIlIlIll[#("I8v9")]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("hU")]] =
+                                llllllIIIIIllI[lIlIlIlIll[#("ppT")]] - llllllIIIIIllI[lIlIlIlIll[#("DcRk")]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("Ap")]] =
+                                llllllIIIIIllI[lIlIlIlIll[#("Jfl")]] / lIlIlIlIll[#("vPrU")]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("6b")]] =
+                                llllllIIIIIllI[lIlIlIlIll[#("PSI")]] * lIlIlIlIll[#("fB6n")]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("Z9")]] =
+                                llllllIIIIIllI[lIlIlIlIll[#{"1 + 1 = 111", {892, 446, 960, 959}, {809, 641, 299, 243}}]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("Ra")]] = llllllIIIIIllI[lIlIlIlIll[#("err")]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            lIllllIIIIl = lIlIlIlIll[#("Yyx")]
+                        else
+                            if (lIlIlIlIll[#("8u")] < llllllIIIIIllI[lIlIlIlIll[#("PiMF")]]) then
+                                lIllllIIIIl = lIllllIIIIl + 1
+                            else
+                                lIllllIIIIl = lIlIlIlIll[#("T3G")]
+                            end
+                        end
+                    elseif IIIllllIIIll <= #("6n0nmVGR5TPPz62iiRX9R2IGAH8HKqjLAEIrQR4lyCLoncyHli1VeaAdQuYPW") then
+                        if IIIllllIIIll <= #("hPKdo5zLCCXMLorssyiBvBzzGAdELv2ozzu6PjXDiKQA7DzlWxbAGvNQ") then
+                            if IIIllllIIIll <= #("lIZ14agJInl4vNjKQsWU9Bda2SntCTcWOQEM7LnKK0AonqBU20Zd15") then
+                                if IIIllllIIIll > #("UEZ9mWWgYkApPjHNeelkjbZXMqECM394SzTiiMbXXTLeXaVKunV8P") then
+                                    local IIIllllIIIll
+                                    llllllIIIIIllI[lIlIlIlIll[#("lj")]] = IIIlIIllIIIIIIII[lIlIlIlIll[#("R8Q")]]
+                                    lIllllIIIIl = lIllllIIIIl + 1
+                                    lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                    llllllIIIIIllI[lIlIlIlIll[#("Io")]] = (lIlIlIlIll[#("9rH")] ~= 0)
+                                    lIllllIIIIl = lIllllIIIIl + 1
+                                    lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                    IIIllllIIIll = lIlIlIlIll[#("Dy")]
+                                    llllllIIIIIllI[IIIllllIIIll](llllllIIIIIllI[IIIllllIIIll + 1])
+                                    lIllllIIIIl = lIllllIIIIl + 1
+                                    lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                    llllllIIIIIllI[lIlIlIlIll[#("xL")]] = lIlIlIlIll[#("0EG")]
+                                    lIllllIIIIl = lIllllIIIIl + 1
+                                    lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                                    llllllIIIIIllI[lIlIlIlIll[#("ZL")]] = lIlIlIlIll[#("BeE")]
+                                else
+                                    local lIlIlIlIll = lIlIlIlIll[#("tb")]
+                                    llllllIIIIIllI[lIlIlIlIll] =
+                                        llllllIIIIIllI[lIlIlIlIll](
+                                        lllIIlllIlllIlII(llllllIIIIIllI, lIlIlIlIll + 1, IIIllIIIlI)
+                                    )
+                                end
+                            elseif IIIllllIIIll > #("hTPcx5ruE5kFHpAzEDcyyABV9LG3gziao8raDfogFDpQ3rDFj5Tr6qx") then
+                                llllllIIIIIllI[lIlIlIlIll[#("0p")]] =
+                                    llllllIIIIIllI[lIlIlIlIll[#("1r0")]][
+                                    lIlIlIlIll[
+                                        #{
+                                            {530, 582, 247, 178},
+                                            {273, 992, 250, 370},
+                                            {785, 792, 812, 126},
+                                            {695, 807, 791, 277}
+                                        }
+                                    ]
+                                ]
+                            else
+                                llllllIIIIIllI[lIlIlIlIll[#{"1 + 1 = 111", {766, 883, 477, 137}}]] =
+                                    llllllIIIIIllI[lIlIlIlIll[#("SaC")]] + llllllIIIIIllI[lIlIlIlIll[#("a8bU")]]
+                            end
+                        elseif IIIllllIIIll <= #("s4cWzynfWjqJ8A5zn525kV1RiaTkQ0e7LKSJcDRhoj3Tb3HU9ueayCHIcv") then
+                            if IIIllllIIIll == #("zPdz5fs8yRxvVoVQa1iPoE9kvWeJidkHRYsDkU7OT4jdN8sWMVHQ3Qz5P") then
+                                llllllIIIIIllI[lIlIlIlIll[#("0e")]] =
+                                    llllllIIIIIllI[lIlIlIlIll[#("Xot")]] % lIlIlIlIll[#("JsaS")]
+                            else
+                                local lIllllIIIIl = lIlIlIlIll[#("kj")]
+                                llllllIIIIIllI[lIllllIIIIl] =
+                                    llllllIIIIIllI[lIllllIIIIl](
+                                    lllIIlllIlllIlII(llllllIIIIIllI, lIllllIIIIl + 1, lIlIlIlIll[#("26m")])
+                                )
+                            end
+                        elseif IIIllllIIIll <= #("djaT0tHZP66sGp4F6tt6HxEs6xGENaAyXsRYN9eZGYtx0spqWzTfLTuQQSW") then
+                            lIllllIIIIl = lIlIlIlIll[#("KXo")]
+                        elseif IIIllllIIIll == #("YclOHIGmJg17oFATdgDNhoSnrtXd8ah4mMbEMQZrXdSPIW0ftLNJpiuJt8vm") then
+                            llllllIIIIIllI[lIlIlIlIll[#("sO")]] =
+                                llllllIIIIIllI[lIlIlIlIll[#("bSa")]] - lIlIlIlIll[#("Y4O7")]
+                        else
+                            llllllIIIIIllI[lIlIlIlIll[#("iG")]] =
+                                #llllllIIIIIllI[lIlIlIlIll[#{"1 + 1 = 111", {773, 441, 668, 85}, "1 + 1 = 111"}]]
+                        end
+                    elseif IIIllllIIIll <= #("DoJ87UNE6hxrk0eHdQFERUxxJPeqCjOtNGtYjRLcnMxEqqerqbqr1TdT2mzrQvbWE") then
+                        if
+                            IIIllllIIIll <=
+                                #{
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    {817, 487, 790, 366},
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    {765, 703, 511, 901},
+                                    "1 + 1 = 111",
+                                    {417, 626, 481, 762},
+                                    {418, 812, 967, 567},
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    {981, 56, 989, 687},
+                                    {918, 789, 267, 218},
+                                    "1 + 1 = 111",
+                                    {523, 659, 805, 167},
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    {628, 3, 643, 103},
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    {325, 737, 858, 861},
+                                    {790, 703, 231, 543},
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    {189, 4, 184, 532},
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    {17, 497, 934, 756},
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    {629, 897, 847, 420},
+                                    {744, 853, 161, 303},
+                                    "1 + 1 = 111",
+                                    {930, 141, 498, 122},
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    {979, 991, 216, 193},
+                                    "1 + 1 = 111",
+                                    {661, 984, 178, 507},
+                                    {409, 760, 441, 265},
+                                    "1 + 1 = 111",
+                                    {980, 422, 732, 414},
+                                    {169, 851, 317, 315},
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    {606, 772, 965, 248},
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    {51, 964, 770, 786},
+                                    "1 + 1 = 111",
+                                    {341, 997, 356, 487},
+                                    "1 + 1 = 111",
+                                    "1 + 1 = 111",
+                                    {262, 351, 439, 532},
+                                    {335, 414, 602, 370},
+                                    {726, 340, 349, 954}
+                                }
+                         then
+                            if IIIllllIIIll > #("FV22Pja8W8jfCEn70kKDG9R2O2nZSm1zqeELgoCI3yY57FsTSxK3mO2GeanX6l") then
+                                llllllIIIIIllI[lIlIlIlIll[#{{710, 916, 374, 900}, "1 + 1 = 111"}]] =
+                                    (lIlIlIlIll[#("VNs")] ~= 0)
+                            else
+                                llllllIIIIIllI[lIlIlIlIll[#("17")]] =
+                                    llllllIIIIIllI[lIlIlIlIll[#("4p5")]] - llllllIIIIIllI[lIlIlIlIll[#("aYCV")]]
+                            end
+                        elseif IIIllllIIIll > #("KgVYyaN0MTbJikV5jJFgvM8lNl7GgaPMSgoZmQ5SfG8kkeUusfenBe57iJllcgUL") then
+                            local lIllllIIIIl = lIlIlIlIll[#("cK")]
+                            local IIIllllIIIll, lIlIlIlIll =
+                                lIlllIIIllIlIIllIIlllllII(
+                                llllllIIIIIllI[lIllllIIIIl](
+                                    lllIIlllIlllIlII(llllllIIIIIllI, lIllllIIIIl + 1, lIlIlIlIll[#("dzQ")])
+                                )
+                            )
+                            IIIllIIIlI = lIlIlIlIll + lIllllIIIIl - 1
+                            local lIlIlIlIll = 0
+                            for lIllllIIIIl = lIllllIIIIl, IIIllIIIlI do
+                                lIlIlIlIll = lIlIlIlIll + 1
+                                llllllIIIIIllI[lIllllIIIIl] = IIIllllIIIll[lIlIlIlIll]
+                            end
+                        else
+                            local IIIllIIIlI
+                            local IIIlIIllIIIIIIII
+                            local IIIllllIIIll
+                            llllllIIIIIllI[lIlIlIlIll[#("C9")]] =
+                                llllllIIIIIllI[lIlIlIlIll[#("HXc")]] % lIlIlIlIll[#("DAxz")]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("Cx")]] =
+                                llllllIIIIIllI[lIlIlIlIll[#("7QY")]] + lIlIlIlIll[#("zv05")]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("ih")]] = llllllIIIIIllI[lIlIlIlIll[#("r1e")]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#{"1 + 1 = 111", {919, 803, 443, 656}}]] =
+                                llllllIIIIIllI[lIlIlIlIll[#("ZXe")]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("pS")]] = llllllIIIIIllI[lIlIlIlIll[#("rXT")]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("Qr")]] = llllllIIIIIllI[lIlIlIlIll[#("K1g")]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("gd")]] = llllllIIIIIllI[lIlIlIlIll[#("6K7")]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("AR")]] = llllllIIIIIllI[lIlIlIlIll[#("aUL")]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            IIIllllIIIll = lIlIlIlIll[#{"1 + 1 = 111", "1 + 1 = 111"}]
+                            llllllIIIIIllI[IIIllllIIIll] =
+                                llllllIIIIIllI[IIIllllIIIll](
+                                lllIIlllIlllIlII(llllllIIIIIllI, IIIllllIIIll + 1, lIlIlIlIll[#("gIk")])
+                            )
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("p8")]] =
+                                llllllIIIIIllI[lIlIlIlIll[#("Qof")]][llllllIIIIIllI[lIlIlIlIll[#("C6ZH")]]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("in")]] = llllllIIIIIllI[lIlIlIlIll[#("lGr")]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("Wy")]] = llllllIIIIIllI[lIlIlIlIll[#("IO3")]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#{"1 + 1 = 111", {365, 181, 377, 625}}]] =
+                                llllllIIIIIllI[lIlIlIlIll[#("kWj")]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("Zk")]] = llllllIIIIIllI[lIlIlIlIll[#("Q8g")]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            IIIllllIIIll = lIlIlIlIll[#("nV")]
+                            llllllIIIIIllI[IIIllllIIIll] =
+                                llllllIIIIIllI[IIIllllIIIll](
+                                lllIIlllIlllIlII(llllllIIIIIllI, IIIllllIIIll + 1, lIlIlIlIll[#("Q1Y")])
+                            )
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("JC")]] =
+                                llllllIIIIIllI[lIlIlIlIll[#("Sl3")]][llllllIIIIIllI[lIlIlIlIll[#("xOI8")]]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            IIIllllIIIll = lIlIlIlIll[#("xl")]
+                            llllllIIIIIllI[IIIllllIIIll] =
+                                llllllIIIIIllI[IIIllllIIIll](
+                                lllIIlllIlllIlII(llllllIIIIIllI, IIIllllIIIll + 1, lIlIlIlIll[#("q4H")])
+                            )
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            llllllIIIIIllI[lIlIlIlIll[#("P5")]] =
+                                llllllIIIIIllI[lIlIlIlIll[#("M0D")]][llllllIIIIIllI[lIlIlIlIll[#("WBn7")]]]
+                            lIllllIIIIl = lIllllIIIIl + 1
+                            lIlIlIlIll = lIlIlIIlllIlIl[lIllllIIIIl]
+                            IIIlIIllIIIIIIII = lIlIlIlIll[#{{561, 629, 105, 481}, {906, 895, 498, 996}, "1 + 1 = 111"}]
+                            IIIllIIIlI = llllllIIIIIllI[IIIlIIllIIIIIIII]
+                            for lIlIlIlIll = IIIlIIllIIIIIIII + 1, lIlIlIlIll[#("UFPj")] do
+                                IIIllIIIlI = IIIllIIIlI .. llllllIIIIIllI[lIlIlIlIll]
+                            end
+                            llllllIIIIIllI[lIlIlIlIll[#("Dc")]] = IIIllIIIlI
+                        end
+                    elseif
+                        IIIllllIIIll <=
+                            #{
+                                "1 + 1 = 111",
+                                {548, 554, 65, 470},
+                                {228, 89, 277, 23},
+                                {296, 724, 726, 452},
+                                {157, 325, 599, 843},
+                                {523, 681, 274, 669},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {17, 610, 414, 109},
+                                {805, 218, 250, 668},
+                                {115, 943, 307, 838},
+                                "1 + 1 = 111",
+                                {267, 628, 280, 540},
+                                {916, 870, 844, 80},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {953, 656, 384, 982},
+                                {339, 171, 253, 131},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {574, 757, 733, 811},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {477, 651, 269, 25},
+                                {35, 114, 234, 945},
+                                {667, 806, 65, 444},
+                                {202, 940, 517, 159},
+                                "1 + 1 = 111",
+                                {904, 496, 746, 795},
+                                {892, 523, 200, 460},
+                                "1 + 1 = 111",
+                                {810, 802, 697, 108},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {744, 762, 701, 83},
+                                {98, 310, 328, 874},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {426, 414, 139, 300},
+                                "1 + 1 = 111",
+                                {953, 198, 314, 20},
+                                {246, 777, 118, 135},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {30, 975, 868, 50},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {709, 908, 667, 301},
+                                {93, 629, 791, 635},
+                                {803, 693, 367, 682},
+                                {833, 965, 562, 552},
+                                {669, 798, 361, 715},
+                                {841, 929, 606, 851},
+                                "1 + 1 = 111"
+                            }
+                     then
+                        if IIIllllIIIll > #("pvTn0Ov1GKf7vg28pfcTEH82UgsNPIacdNrrbmcesVSOUR47g606aHnTx0DUuTm7Kd") then
+                            local lIllllIIIIl = lIlIlIlIll[#("sa")]
+                            llllllIIIIIllI[lIllllIIIIl] =
+                                llllllIIIIIllI[lIllllIIIIl](
+                                lllIIlllIlllIlII(
+                                    llllllIIIIIllI,
+                                    lIllllIIIIl + 1,
+                                    lIlIlIlIll[#{"1 + 1 = 111", "1 + 1 = 111", "1 + 1 = 111"}]
+                                )
+                            )
+                        else
+                            if
+                                (llllllIIIIIllI[lIlIlIlIll[#("H3")]] ~=
+                                    llllllIIIIIllI[
+                                        lIlIlIlIll[#{{581, 672, 170, 1}, "1 + 1 = 111", "1 + 1 = 111", "1 + 1 = 111"}]
+                                    ])
+                             then
+                                lIllllIIIIl = lIllllIIIIl + 1
+                            else
+                                lIllllIIIIl = lIlIlIlIll[#("Q0C")]
+                            end
+                        end
+                    elseif IIIllllIIIll <= #("TZK6dc8ASYthdlvGSSdbHzI4lTsTKJUeRXliG9X4cgF4cSAI9mEpGbxtqQVtUo0jdpBq") then
+                        local lIlIlIlIll = lIlIlIlIll[#("Yn")]
+                        llllllIIIIIllI[lIlIlIlIll] = llllllIIIIIllI[lIlIlIlIll](llllllIIIIIllI[lIlIlIlIll + 1])
+                    elseif
+                        IIIllllIIIll ==
+                            #{
+                                "1 + 1 = 111",
+                                {487, 493, 757, 551},
+                                {876, 385, 562, 372},
+                                {312, 11, 312, 687},
+                                "1 + 1 = 111",
+                                {273, 97, 785, 662},
+                                "1 + 1 = 111",
+                                {736, 511, 281, 287},
+                                "1 + 1 = 111",
+                                {186, 239, 987, 885},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {758, 584, 464, 471},
+                                {783, 900, 464, 98},
+                                "1 + 1 = 111",
+                                {384, 445, 611, 733},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {404, 225, 908, 777},
+                                {205, 432, 47, 848},
+                                {673, 934, 269, 173},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {366, 314, 75, 79},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {417, 682, 123, 528},
+                                {93, 160, 332, 532},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {736, 25, 745, 977},
+                                "1 + 1 = 111",
+                                {921, 263, 145, 604},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {117, 450, 290, 221},
+                                {353, 387, 339, 580},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {920, 700, 866, 315},
+                                "1 + 1 = 111",
+                                {780, 404, 545, 910},
+                                {642, 337, 712, 796},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {459, 2, 887, 344},
+                                "1 + 1 = 111",
+                                {621, 728, 805, 625},
+                                {648, 302, 255, 893},
+                                {606, 16, 78, 392},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {780, 153, 756, 734},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {762, 429, 179, 58},
+                                {907, 77, 454, 481},
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                "1 + 1 = 111",
+                                {583, 621, 401, 171}
+                            }
+                     then
+                        do
+                            return llllllIIIIIllI[lIlIlIlIll[#("xD")]]
+                        end
+                    else
+                        if (lIlIlIlIll[#("et")] < llllllIIIIIllI[lIlIlIlIll[#("LMM5")]]) then
+                            lIllllIIIIl = lIllllIIIIl + 1
+                        else
+                            lIllllIIIIl = lIlIlIlIll[#("KuF")]
+                        end
+                    end
+                    lIllllIIIIl = lIllllIIIIl + 1
+                end
+            end
+            A, B = lIIIIIlllIlII(IlIllIlIlIIlllllIlllIllII(IIIIIllIll))
+            if not A[1] then
+                local lIlIlIlIll = lIlllIIIllIlIIllIIlllllII[4][lIllllIIIIl] or "?"
+                error("ERROR IN IRONBREW SCRIPT [LINE " .. lIlIlIlIll .. "]:" .. A[2])
+                wait(9e9)
+            else
+                return lllIIlllIlllIlII(A, 2, B)
+            end
+        end)
+    end
+    return IIIIllllIIIllIIlIlIlIlI(true, {}, IIIIIllIll())()
+end)(string.byte, table.insert, setmetatable)
